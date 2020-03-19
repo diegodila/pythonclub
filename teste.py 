@@ -11,4 +11,3 @@ while i < len(lista):
     i += 1
 
 print(soma)
-prin
