@@ -1,3 +1,5 @@
+# recebe um lista e tira a media dessa lista 
+
 def media(*args): 
     soma = 0
     i = 0
