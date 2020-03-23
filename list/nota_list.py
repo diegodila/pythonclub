@@ -3,7 +3,7 @@
 def nota(*args):
     soma = 0
     i = 0
-    contador = 0
+    # contador = 0
     for i in args[i]:
         # args[i] = float(input(f'Digite a nota {contador+1}: ')) tupla não podemos alterar valor 
         soma += i
