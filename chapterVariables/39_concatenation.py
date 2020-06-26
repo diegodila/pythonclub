@@ -1,3 +1,4 @@
+#concatenção de strings
 s = 'abc'
 print(s + 'c')
 print(s + 'D'*4)

@@ -1,3 +1,4 @@
+#acessando o conteudo caractere a caractere em uma cadeia de caracteres pelo seu indice
 a = "abcdfg"
 
 print(a[0])

@@ -1,3 +1,4 @@
+#trabalhando com composição de string %
 idade = 22 
 print('A idade é [%d]' %idade)
 print('A idade é [%04d]' %idade)
