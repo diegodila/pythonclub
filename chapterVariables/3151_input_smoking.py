@@ -5,10 +5,9 @@ def smoking(*args):
     minutos = (args[i][i] * 10) * (args[i][i+1] * 365)
     horas = ((minutos / 60) // 1)
     hora_minuto = ((minutos / 60) % horas) * 60
-    print(horas)
     print(f'O tempo perdido de vida em total de minutos: {minutos} ')
     print(f'O tempo perdido de vida é: {horas:.0f} horas e {hora_minuto:.0f} minutos ')
-    return minutos
+    return f'minutos{minutos} horas:{horas} minutos:{hora_minuto}'
 
 
 lista = []
