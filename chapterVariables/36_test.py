@@ -17,3 +17,5 @@ def nota(*args):
     
 
 nota(7,8,9)
+
+x = lambda *args:
