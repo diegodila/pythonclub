@@ -17,5 +17,14 @@ como mostrar quais pythons estao instalados?
 pyenv version 
 
 como definir o python padrao atraves do pyenv?
-pyenv global <version> 
+pyenv global <version>
+
+como fazer um texto ser interpretado pelo python?
+""" """
+
+o docstring é um comentario no python?
+""" """ 
+
+como funciona o comentario no interpretador python?
+ele ignora a partir da cerquilha
 
