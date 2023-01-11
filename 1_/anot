@@ -1,0 +1,20 @@
+o que significa o m  no python3 -m venv venv?
+modulo
+
+como econtrar a versao do python? 
+which python
+
+como fazer o upgrade do python?
+python -m pip install pip --upgrade
+
+como executar um programa python?
+python main.py
+
+como listar todas as versoes do pyenv?
+pyenv install -l or --list
+
+como mostrar quais pythons estao instalados?
+pyenv version 
+
+como definir o python padrao atraves do pyenv?
+pyenv global <version> 
