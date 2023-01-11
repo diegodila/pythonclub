@@ -18,3 +18,4 @@ pyenv version
 
 como definir o python padrao atraves do pyenv?
 pyenv global <version> 
+
