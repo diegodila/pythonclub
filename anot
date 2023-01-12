@@ -28,3 +28,24 @@ o docstring é um comentario no python?
 como funciona o comentario no interpretador python?
 ele ignora a partir da cerquilha
 
+
+-------------------------------------------------------------
+Session 5
+
+qual é uma das primeiras coisas que é executado quando voce chama a classe?
+__init__
+
+como é chamado a função quando está dentro da classe?
+metodo
+
+qual é o primeiro parametro que passamos no __init__?
+def __init__(self,<>):
+
+como criamos uma classe Pessoa com parametros de nome e sobrenome?
+class Pessoa:
+    def __init__(self, nome, sobrenome):
+        self.nome = nome
+        self.sobrenome = sobrenome
+
+
+
