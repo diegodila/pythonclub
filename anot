@@ -77,6 +77,6 @@ class Carro:
 p = Carro('Fusca')
 p.acelerar()
 
-
+o nome self é uma convenção?
 
 
