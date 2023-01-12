@@ -48,4 +48,35 @@ class Pessoa:
         self.sobrenome = sobrenome
 
 
+como colocar comportamentos em uma classe?
+criando metodos 
+
+o metodo init retorna o que?
+none
+
+escreva uma classe com hard coded
+class Diego:
+    def __init__(self):
+        self.nome = 'Diego' #hard coded
+
+o que é hard coded?
+é algo que foi escrito diretamento no codigo
+
+o que todo metodo recebe como primeiro paramentro para referenciar a instancia no python?
+self
+
+
+escreva uma classe carro com comportamento de acelerar
+class Carro:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def acelerar(self):
+        print(f'{self.nome} está acelerando')
+        
+p = Carro('Fusca')
+p.acelerar()
+
+
+
 
