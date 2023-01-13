@@ -30,8 +30,6 @@ qual é o primeiro parametro que passamos no __init__?
 
 como criamos uma classe Pessoa com parametros de nome e sobrenome?
 
-
-
 como colocar comportamentos em uma classe?
 
 o metodo init retorna o que?
@@ -41,7 +39,6 @@ escreva uma classe com hard coded
 o que é hard coded?
 
 o que todo metodo recebe como primeiro paramentro para referenciar a instancia no python?
-
 
 escreva uma classe carro com comportamento de acelerar
 
