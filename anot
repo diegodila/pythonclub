@@ -80,3 +80,49 @@ p.acelerar()
 o nome self é uma convenção?
 sim
 
+uma classe pode gerar quantas instancias?
+infinitas
+
+na classe o que é o self?
+é a propria instancia da classe
+
+qual metodo é executado quando instancia a classe?
+__init__
+
+defina uma variavel para ser executada quando instanciar a classe sem chamar essa variavel
+class Macarrao:
+    def __init__(self, nome):
+        self.nome = nome
+
+        variavel = 'Joazinho'
+        print(variavel)
+        
+
+p = Macarrao('diiego')
+
+print(p.nome)
+
+como é chamado o escopo das classes e metodos?
+namespaces
+
+como definir atributo de classe e atributo de instancia e como retornar um metodo da classe em outro metodo?
+class test:
+    variavel = 'diego'
+
+    def __init__(self,nome):
+        self.nome = nome
+
+    def acelerar(self):
+        return f'{self.nome} está acelerando {self.variavel}'
+
+    def ace(self,*args, **kwargs):
+        return self.acelerar(*args, **kwargs)
+    
+p = test('diego')
+print(p.ace())
+
+
+
+
+    
+
