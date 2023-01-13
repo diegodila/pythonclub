@@ -23,7 +23,7 @@ como fazer um texto ser interpretado pelo python?
 """ """
 
 o docstring é um comentario no python?
-""" """ 
+não, ele é interpretado pelo python, o comentario não é 
 
 como funciona o comentario no interpretador python?
 ele ignora a partir da cerquilha
@@ -78,5 +78,5 @@ p = Carro('Fusca')
 p.acelerar()
 
 o nome self é uma convenção?
-
+sim
 
