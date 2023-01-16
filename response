@@ -44,4 +44,15 @@ escreva uma classe carro com comportamento de acelerar
 
 o nome self é uma convenção?
 
+---------------------------------------------------------------------------------------
+uma classe pode gerar quantas instancias?
 
+na classe o que é o self?
+
+qual metodo é executado quando instancia a classe?
+
+defina uma variavel para ser executada quando instanciar a classe sem chamar essa variavel
+
+como é chamado o escopo das classes e metodos?
+
+como definir atributo de classe e atributo de instancia e como retornar um metodo da classe em outro metodo?
