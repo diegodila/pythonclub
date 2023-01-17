@@ -56,3 +56,11 @@ defina uma variavel para ser executada quando instanciar a classe sem chamar ess
 como é chamado o escopo das classes e metodos?
 
 como definir atributo de classe e atributo de instancia e como retornar um metodo da classe em outro metodo?
+
+-------------------------------------------------------------------------------------------------------------------
+
+escreva um classe camera para manter o estados (filmar, fotografar, para_de_filmar) dentro dela. requisito de quando estiver filmando não pode fotografar
+
+quais as duas maneiras de acessar um atributo de classe?
+
+escreva uma classe com atributo de escopo de classe
