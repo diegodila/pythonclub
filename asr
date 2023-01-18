@@ -170,3 +170,18 @@ class Pessoa:
         print(self.nome)
         print(Pessoa.ano_atual)
         print(f'O print do atributo de classe com self {self.ano_atual}')
+
+
+---------------------------------------------------------------------------------------------
+
+o que é o __dict__?
+é o dicionario que está dentro do objeto, ele matem um objeto do tipo mapping dentro das instancias da classes python. Ele mantem os valores que podem ser escritos dentro do objeto. Um dicionario que está dentro da instancias da classe python, é considerado um atributo que está dentro da classe, é onde os atributos da classe são salvos. Ele retem os valores do seu objeto
+
+como deletar um dado atributo de uma classe?
+del <instancia_classe>.<atributo_classe>
+
+onde os atributos da classe são salvos?
+__dict__
+
+
+
