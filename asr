@@ -157,7 +157,7 @@ class Camera:
 
 
 quais as duas maneiras de acessar um atributo de classe?
-self.<nome_atributo> ou <Classe>.<nome_atributo
+self.<nome_atributo> ou <Classe>.<nome_atributo>
 
 escreva uma classe com atributo de escopo de classe
 class Pessoa:
@@ -208,6 +208,17 @@ p = Pessoa(**dados)
 
 para que serve o **kwargs do python?
 para desempacotar um dicionario dentro do parametro, como se passasse varias chave valor em um simples **kwargs
+
+construa uma classe com propriedades e depois tenha um dicionario de dados e desempacote eles
+class Pessoa:
+    def __init__(self, nome='Diego',idade='1000'):
+        self.nome = nome
+        self.idade = idade
+
+dados = {'nome':'Ds', 'idade':'2333'}
+
+p = Pessoa(**dados)
+
 
 
 
