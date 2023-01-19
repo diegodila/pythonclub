@@ -183,5 +183,32 @@ del <instancia_classe>.<atributo_classe>
 onde os atributos da classe são salvos?
 __dict__
 
+qual a função a que conseguimos ver o __dict__?
+vars(<objeto>)
+
+o __dict__ é editavel? construa uma classe!
+class Pessoa:
+    def __init__(self,nome='Diego'):
+        self.nome = nome
+
+p = Pessoa()
+p.__dict__['sobrenome'] = 'G'
+
+print(vars(p))
+
+crie um dicionario de dados e desempacote em uma classe
+class Pessoa:
+    def __init__(self, nome='Diego',idade='1000'):
+        self.nome = nome
+        self.idade = idade 
+
+dados = {'nome':'Ds', 'idade':'2333'}
+
+p = Pessoa(**dados)
+
+para que serve o **kwargs do python?
+para desempacotar um dicionario dentro do parametro, como se passasse varias chave valor em um simples **kwargs
+
+
 
 
