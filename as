@@ -96,6 +96,21 @@ quais as duas maneiras de acessar um atributo de classe?
 
 escreva uma classe com atributo de escopo de classe
 
----------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+
+o que é o __dict__?
+
+como deletar um dado atributo de uma classe?
+
+onde os atributos da classe são salvos?
 
 
+qual a função a que conseguimos ver o __dict__?
+
+
+o __dict__ é editavel? construa uma classe!
+
+
+para que serve o **kwargs do python?
+
+construa uma classe com propriedades e depois tenha um dicionario de dados e desempacote eles
