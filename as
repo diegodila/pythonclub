@@ -95,3 +95,7 @@ quais as duas maneiras de acessar um atributo de classe?
 
 
 escreva uma classe com atributo de escopo de classe
+
+---------------------------------------------------------------------------------------------------------------------
+
+
