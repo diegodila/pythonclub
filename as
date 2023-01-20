@@ -114,3 +114,15 @@ o __dict__ é editavel? construa uma classe!
 para que serve o **kwargs do python?
 
 construa uma classe com propriedades e depois tenha um dicionario de dados e desempacote eles
+
+---------------------------------------------
+
+qual convenção de nome é utilizada para Classe no python?
+
+qual convenção de nome é utilizada para nomes no python?
+ 
+crie uma classe Pessoa com propriedades de nome e sobrenome e salve os dados da classe em json
+
+importe o modulo do python para ter o caminho do arquivo e faça a leitura dele
+
+
