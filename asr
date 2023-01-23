@@ -276,7 +276,7 @@ main
 como descobrir o nome do modulo?
 __name__
 
-escreva uma classe que só execute se o modulo por ele mesmo
+ESCREVA UMA CLASSE QUE SÓ EXECUTE O METODO DENTRO DELA SE O MODULO FOR ELE MESMO
 class Pessoa:
     def __init__(self,nome='diego'):
         self.nome = nome
@@ -307,8 +307,20 @@ p1 = Pessoa().cria_instancia('dsdi')
 
 p.__dict__
 
-o que é o decorator @staticmethod?
+O QUE É O DECORATOR @STATICMETHOD?
 é uma função que está dentro da classe, sem acesso a instancia e sem acesso ao cls
 
-o que é o method?
-é o metodo da instancia, com acesso ao self
+O QUE É O METHOD?
+é o metodo da instancia, com acesso ao 
+
+CONSTRUA UMA CLASSE COM STATICMETHOD E UTILIZE O ARGS E KWARGS NESSE METODO
+class Pessoa:
+    def __init__(self,nome='Diego):
+        self.nome = nome
+
+    @staticmethod
+    def ace(*args,**kwargs):
+        print(args,kwargs)
+Pessoa.ace(1,2,4)
+Pessoa.ace(dd=2,sdds=4)
+-------------------------------------------------------------------------------------------------------------------------
