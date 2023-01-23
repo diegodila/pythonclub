@@ -161,3 +161,8 @@ O QUE É O DECORATOR @STATICMETHOD?
 
 
 O QUE É O METHOD?
+
+
+CONSTRUA UMA CLASSE COM STATICMETHOD E UTILIZE O ARGS E KWARGS NESSE METODO
+
+-------------------------------------------------------------------------------------------------------------------------
