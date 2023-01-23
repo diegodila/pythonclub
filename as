@@ -125,4 +125,20 @@ crie uma classe Pessoa com propriedades de nome e sobrenome e salve os dados da 
 
 importe o modulo do python para ter o caminho do arquivo e faça a leitura dele
 
+importe a classe pessoa e passe os dados do f5_POO/json para essa classe
 
+como adiar a execução de algo no arquivo python?
+
+qual é nome do modulo quando executamos diretamente?
+
+como descobrir o nome do modulo?
+
+escreve uma classe que só execute se o modulo por ele mesmo
+
+para fazer um metodo de classe o que é necessario?
+
+construa uma classe Pessoa com atributo e metodo de classe:
+
+o que é o decorator @staticmethod?
+
+o que é o method?
