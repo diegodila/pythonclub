@@ -1,144 +1,163 @@
-que significa o m  no python3 -m venv venv?
+QUE SIGNIFICA O M  NO PYTHON3 -M VENV VENV?
 
 
-como encontrar a versao do python? 
+COMO ENCONTRAR A VERSAO DO PYTHON?
 
 
-como fazer o upgrade do python?
+COMO FAZER O UPGRADE DO PYTHON?
 
 
-como executar um programa python?
+COMO EXECUTAR UM PROGRAMA PYTHON?
 
 
-como listar todas as versoes do pyenv?
+COMO LISTAR TODAS AS VERSOES DO PYENV?
 
 
-como mostrar quais pythons estao instalados?
+COMO MOSTRAR QUAIS PYTHONS ESTAO INSTALADOS?
 
 
-como definir o python padrao atraves do pyenv?
+COMO DEFINIR O PYTHON PADRAO ATRAVES DO PYENV?
 
 
-como fazer um texto ser interpretado pelo python?
+COMO FAZER UM TEXTO SER INTERPRETADO PELO PYTHON?
 
 
-o docstring é um comentario no python?
+O DOCSTRING É UM COMENTARIO NO PYTHON?
 
 
-como funciona o comentario no interpretador python?
+COMO FUNCIONA O COMENTARIO NO INTERPRETADOR PYTHON?
 
 
 -------------------------------------------------------------
-Session 5
+SESSION 5
 
-qual é uma das primeiras coisas que é executado quando voce chama a classe?
-
-
-como é chamado a função quando está dentro da classe?
+QUAL É UMA DAS PRIMEIRAS COISAS QUE É EXECUTADO QUANDO VOCE CHAMA A CLASSE?
 
 
-qual é o primeiro parametro que passamos no __init__?
+COMO É CHAMADO A FUNÇÃO QUANDO ESTÁ DENTRO DA CLASSE?
 
 
-como criamos uma classe Pessoa com parametros de nome e sobrenome?
+QUAL É O PRIMEIRO PARAMETRO QUE PASSAMOS NO __INIT__?
 
 
-como colocar comportamentos em uma classe?
+COMO CRIAMOS UMA CLASSE PESSOA COM PARAMETROS DE NOME E SOBRENOME?
 
 
-o metodo init retorna o que?
+COMO COLOCAR COMPORTAMENTOS EM UMA CLASSE?
 
 
-escreva uma classe com hard coded
+O METODO INIT RETORNA O QUE?
 
 
-
-o que é hard coded?
-
-
-o que todo metodo recebe como primeiro paramentro para referenciar a instancia no python?
+ESCREVA UMA CLASSE COM HARD CODED
 
 
-escreva uma classe carro com comportamento de acelerar
+O QUE É HARD CODED?
 
 
-o nome self é uma convenção?
+O QUE TODO METODO RECEBE COMO PRIMEIRO PARAMENTRO PARA REFERENCIAR A INSTANCIA NO PYTHON?
+
+
+ESCREVA UMA CLASSE CARRO COM COMPORTAMENTO DE ACELERAR
+
+
+O NOME SELF É UMA CONVENÇÃO?
 
 
 
 ---------------------------------------------------------------------------------------
-uma classe pode gerar quantas instancias?
+UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
 
 
-na classe o que é o self?
+NA CLASSE O QUE É O SELF?
 
 
-qual metodo é executado quando instancia a classe?
+QUAL METODO É EXECUTADO QUANDO INSTANCIA A CLASSE?
 
 
-defina uma variavel para ser executada quando instanciar a classe sem chamar essa variavel
+DEFINA UMA VARIAVEL PARA SER EXECUTADA QUANDO INSTANCIAR A CLASSE SEM CHAMAR ESSA VARIAVEL
 
 
-como é chamado o escopo das classes e metodos?
+COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
 
 
-como definir atributo de classe e atributo de instancia e como retornar um metodo da classe em outro metodo?
+COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
 
 
 
 -------------------------------------------------------------------------------------------------------------------
 
-escreva um classe camera para manter o estados (filmar, fotografar, para_de_filmar) dentro dela. requisito de quando estiver filmando não pode fotografar
+ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
+
+QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
 
 
-quais as duas maneiras de acessar um atributo de classe?
+ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
 
 
-escreva uma classe com atributo de escopo de classe
 
 ---------------------------------------------------------------------------------------------
 
-o que é o __dict__?
-
-como deletar um dado atributo de uma classe?
-
-onde os atributos da classe são salvos?
+O QUE É O __DICT__?
 
 
-qual a função a que conseguimos ver o __dict__?
+COMO DELETAR UM DADO ATRIBUTO DE UMA CLASSE?
 
 
-o __dict__ é editavel? construa uma classe!
+ONDE OS ATRIBUTOS DA CLASSE SÃO SALVOS?
 
 
-para que serve o **kwargs do python?
+QUAL A FUNÇÃO A QUE CONSEGUIMOS VER O __DICT__?
 
-construa uma classe com propriedades e depois tenha um dicionario de dados e desempacote eles
+
+O __DICT__ É EDITAVEL? CONSTRUA UMA CLASSE!
+
+
+CRIE UM DICIONARIO DE DADOS E DESEMPACOTE EM UMA CLASSE
+
+
+PARA QUE SERVE O **KWARGS DO PYTHON?
+
+
+CONSTRUA UMA CLASSE COM PROPRIEDADES E DEPOIS TENHA UM DICIONARIO DE DADOS E DESEMPACOTE ELES
+
 
 ---------------------------------------------
 
-qual convenção de nome é utilizada para Classe no python?
+QUAL CONVENÇÃO DE NOME É UTILIZADA PARA CLASSE NO PYTHON?
 
-qual convenção de nome é utilizada para nomes no python?
+
+QUAL CONVENÇÃO DE NOME É UTILIZADA PARA NOMES NO PYTHON?
+
  
-crie uma classe Pessoa com propriedades de nome e sobrenome e salve os dados da classe em json
+CRIE UMA CLASSE PESSOA COM PROPRIEDADES DE NOME E SOBRENOME E SALVE OS DADOS DA CLASSE EM JSON
 
-importe o modulo do python para ter o caminho do arquivo e faça a leitura dele
 
-importe a classe pessoa e passe os dados do f5_POO/json para essa classe
+IMPORTE O MODULO CRIADO NO PYTHON PARA TER O CAMINHO DO ARQUIVO E FAÇA A LEITURA DELE
 
-como adiar a execução de algo no arquivo python?
 
-qual é nome do modulo quando executamos diretamente?
+IMPORTE A CLASSE PESSOA E PASSE OS DADOS DO F5_POO/JSON PARA ESSA CLASSE
 
-como descobrir o nome do modulo?
 
-escreve uma classe que só execute se o modulo por ele mesmo
+COMO ADIAR A EXECUÇÃO DE ALGO NO ARQUIVO PYTHON?
 
-para fazer um metodo de classe o que é necessario?
 
-construa uma classe Pessoa com atributo e metodo de classe:
+QUAL É NOME DO MODULO QUANDO EXECUTAMOS DIRETAMENTE?
 
-o que é o decorator @staticmethod?
 
-o que é o method?
+COMO DESCOBRIR O NOME DO MODULO?
+
+
+ESCREVA UMA CLASSE QUE SÓ EXECUTE O METODO DENTRO DELA SE O MODULO FOR ELE MESMO
+
+
+PARA FAZER UM METODO DE CLASSE O QUE É NECESSARIO?
+
+
+CONSTRUA UMA CLASSE PESSOA COM ATRIBUTO E METODO DE CLASSE:
+
+
+O QUE É O DECORATOR @STATICMETHOD?
+
+
+O QUE É O METHOD?
