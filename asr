@@ -257,6 +257,59 @@ with open(PATH_TO_JSON,'r') as read_file:
 
 print(dados)
 
+importe a classe pessoa e passe os dados do f5_POO/json para essa classe
+from work.pythonclub.f5_POO.from_module_json import PATH_TO_JSON, Pessoa
+import json
 
+with open(PATH_TO_JSON,'r') as arquivo:
+    dados = json.load(arquivo)
+    p1 = Pessoa(**dados[0])
+    p2 = Pessoa(**dados[1])
+    
+p1.__dict__
 
+como adiar a execução de algo no arquivo python?
+envolve em uma função
 
+qual é nome do modulo quando executamos diretamente?
+main
+
+como descobrir o nome do modulo?
+__name__
+
+escreve uma classe que só execute se o modulo por ele mesmo
+class Pessoa:
+    def __init__(self,nome='diego'):
+        self.nome = nome
+
+    def ace(self):
+        print(f'{self.nome}')
+
+    if __name__ == '__main__':
+        print('Ele é o main')
+        ace()
+
+para fazer um metodo de classe o que é necessario?
+o decorator em cima do metodo @classmethod
+
+construa uma classe Pessoa com atributo e metodo de classe:
+class Pessoa:
+    ano_atual = 2022
+    def __init__(self,nome='Diego', idade=11):
+        self.nome = nome
+        self.idade = idade
+
+    @classmethod
+    def cria_instancia(cls,nome='Diego'):
+        return cls(nome)
+    
+p = Pessoa('Df')
+p1 = Pessoa().cria_instancia('dsdi')
+
+p.__dict__
+
+o que é o decorator @staticmethod?
+é uma função que está dentro da classe, sem acesso a instancia e sem acesso ao cls
+
+o que é o method?
+é o metodo da instancia, com acesso ao self
