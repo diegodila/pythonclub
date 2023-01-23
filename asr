@@ -247,8 +247,7 @@ def salvar_json():
         
 salvar_json()
 
-importe o modulo do python para ter o caminho do arquivo e faça a leitura dele
-
+importe o modulo criado no python para ter o caminho do arquivo e faça a leitura dele
 from work.pythonclub.f5_POO.from_module_json import PATH_TO_JSON, Pessoa
 import json
 
@@ -277,7 +276,7 @@ main
 como descobrir o nome do modulo?
 __name__
 
-escreve uma classe que só execute se o modulo por ele mesmo
+escreva uma classe que só execute se o modulo por ele mesmo
 class Pessoa:
     def __init__(self,nome='diego'):
         self.nome = nome
