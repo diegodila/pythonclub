@@ -156,10 +156,10 @@ class Camera:
 
 
 
-quais as duas maneiras de acessar um atributo de classe?
+QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
 self.<nome_atributo> ou <Classe>.<nome_atributo>
 
-escreva uma classe com atributo de escopo de classe
+ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
 class Pessoa:
     ano_atual = 2022
 
@@ -174,19 +174,19 @@ class Pessoa:
 
 ---------------------------------------------------------------------------------------------
 
-o que é o __dict__?
+O QUE É O __DICT__?
 é o dicionario que está dentro do objeto, ele matem um objeto do tipo mapping dentro das instancias da classes python. Ele mantem os valores que podem ser escritos dentro do objeto. Um dicionario que está dentro da instancias da classe python, é considerado um atributo que está dentro da classe, é onde os atributos da classe são salvos. Ele retem os valores do seu objeto
 
-como deletar um dado atributo de uma classe?
+COMO DELETAR UM DADO ATRIBUTO DE UMA CLASSE?
 del <instancia_classe>.<atributo_classe>
 
-onde os atributos da classe são salvos?
+ONDE OS ATRIBUTOS DA CLASSE SÃO SALVOS?
 __dict__
 
-qual a função a que conseguimos ver o __dict__?
+QUAL A FUNÇÃO A QUE CONSEGUIMOS VER O __DICT__?
 vars(<objeto>)
 
-o __dict__ é editavel? construa uma classe!
+O __DICT__ É EDITAVEL? CONSTRUA UMA CLASSE!
 class Pessoa:
     def __init__(self,nome='Diego'):
         self.nome = nome
@@ -196,7 +196,7 @@ p.__dict__['sobrenome'] = 'G'
 
 print(vars(p))
 
-crie um dicionario de dados e desempacote em uma classe
+CRIE UM DICIONARIO DE DADOS E DESEMPACOTE EM UMA CLASSE
 class Pessoa:
     def __init__(self, nome='Diego',idade='1000'):
         self.nome = nome
@@ -206,10 +206,10 @@ dados = {'nome':'Ds', 'idade':'2333'}
 
 p = Pessoa(**dados)
 
-para que serve o **kwargs do python?
+PARA QUE SERVE O **KWARGS DO PYTHON?
 para desempacotar um dicionario dentro do parametro, como se passasse varias chave valor em um simples **kwargs
 
-construa uma classe com propriedades e depois tenha um dicionario de dados e desempacote eles
+CONSTRUA UMA CLASSE COM PROPRIEDADES E DEPOIS TENHA UM DICIONARIO DE DADOS E DESEMPACOTE ELES
 class Pessoa:
     def __init__(self, nome='Diego',idade='1000'):
         self.nome = nome
@@ -222,13 +222,13 @@ p = Pessoa(**dados)
 
 ---------------------------------------------
 
-qual convenção de nome é utilizada para Classe no python?
+QUAL CONVENÇÃO DE NOME É UTILIZADA PARA CLASSE NO PYTHON?
 pascal case
 
-qual convenção de nome é utilizada para nomes no python?
+QUAL CONVENÇÃO DE NOME É UTILIZADA PARA NOMES NO PYTHON?
 snake case
  
-crie uma classe Pessoa com propriedades de nome e sobrenome e salve os dados da classe em json
+CRIE UMA CLASSE PESSOA COM PROPRIEDADES DE NOME E SOBRENOME E SALVE OS DADOS DA CLASSE EM JSON
 class Pessoa:
 
     def __init__(self,nome='Diego',sobrenome=''):
