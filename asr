@@ -376,14 +376,14 @@ class Caneta:
 NO PYTHON EU TENHO MODIFICADORES DE ACESSO?
 não
 
-como é representado o modificador de acesso public no python?
+COMO É REPRESENTADO O MODIFICADOR DE ACESSO PUBLIC NO PYTHON?
 normal, sem nenhum underline
 
-como é representado o modificador de acesso protected no python?
+COMO É REPRESENTADO O MODIFICADOR DE ACESSO PROTECTED NO PYTHON?
 com um underline, não deve ser usado fora da classe, para sua classe e subclasses
 
-como é representado o modificador de acesso private no python?
+COMO É REPRESENTADO O MODIFICADOR DE ACESSO PRIVATE NO PYTHON?
 com dois underlines no python, somente para a sua classe, nem para classe filha (subclasses)
 
-o que é name mangling?
+O QUE É NAME MANGLING?
 desfiguração de nomes, so deve ser usado na classe em que foi declarado
