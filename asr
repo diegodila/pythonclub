@@ -31,42 +31,43 @@ ele ignora a partir da cerquilha
 
 -------------------------------------------------------------
 Session 5
+11111111111111
 
-qual é uma das primeiras coisas que é executado quando voce chama a classe?
+QUAL É UMA DAS PRIMEIRAS COISAS QUE É EXECUTADO QUANDO VOCE CHAMA A CLASSE?
 __init__
 
-como é chamado a função quando está dentro da classe?
+COMO É CHAMADO A FUNÇÃO QUANDO ESTÁ DENTRO DA CLASSE?
 metodo
 
-qual é o primeiro parametro que passamos no __init__?
+QUAL É O PRIMEIRO PARAMETRO QUE PASSAMOS NO __INIT__?
 def __init__(self,<>):
 
-como criamos uma classe Pessoa com parametros de nome e sobrenome?
+COMO CRIAMOS UMA CLASSE PESSOA COM PARAMETROS DE NOME E SOBRENOME?
 class Pessoa:
     def __init__(self, nome, sobrenome):
         self.nome = nome
         self.sobrenome = sobrenome
 
 
-como colocar comportamentos em uma classe?
+COMO COLOCAR COMPORTAMENTOS EM UMA CLASSE?
 criando metodos 
 
-o metodo init retorna o que?
+O METODO INIT RETORNA O QUE?
 none
 
-escreva uma classe com hard coded
+ESCREVA UMA CLASSE COM HARD CODED
 class Diego:
     def __init__(self):
         self.nome = 'Diego' #hard coded
 
-o que é hard coded?
-é algo que foi escrito diretamento no codigo
+O QUE É HARD CODED?
+é algo que foi escrito diretamente no codigo
 
-o que todo metodo recebe como primeiro paramentro para referenciar a instancia no python?
+O QUE TODO METODO RECEBE COMO PRIMEIRO PARAMENTRO PARA REFERENCIAR A INSTANCIA NO PYTHON?
 self
 
 
-escreva uma classe carro com comportamento de acelerar
+ESCREVA UMA CLASSE CARRO COM COMPORTAMENTO DE ACELERAR
 class Carro:
     def __init__(self, nome):
         self.nome = nome
@@ -77,9 +78,10 @@ class Carro:
 p = Carro('Fusca')
 p.acelerar()
 
-o nome self é uma convenção?
+O NOME SELF É UMA CONVENÇÃO?
 sim
 
+11111111111111
 ---------------------------------------------------------------------------------------
 uma classe pode gerar quantas instancias?
 infinitas

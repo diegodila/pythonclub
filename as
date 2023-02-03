@@ -30,6 +30,7 @@ COMO FUNCIONA O COMENTARIO NO INTERPRETADOR PYTHON?
 
 -------------------------------------------------------------
 SESSION 5
+11111111111111
 
 QUAL É UMA DAS PRIMEIRAS COISAS QUE É EXECUTADO QUANDO VOCE CHAMA A CLASSE?
 
@@ -63,8 +64,7 @@ ESCREVA UMA CLASSE CARRO COM COMPORTAMENTO DE ACELERAR
 
 O NOME SELF É UMA CONVENÇÃO?
 
-
-
+11111111111111
 ---------------------------------------------------------------------------------------
 UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
 
