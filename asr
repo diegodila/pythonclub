@@ -83,16 +83,17 @@ sim
 
 11111111111111
 ---------------------------------------------------------------------------------------
-uma classe pode gerar quantas instancias?
+22222222222222
+UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
 infinitas
 
-na classe o que é o self?
+NA CLASSE O QUE É O SELF?
 é a propria instancia da classe
 
-qual metodo é executado quando instancia a classe?
+QUAL METODO É EXECUTADO QUANDO INSTANCIA A CLASSE?
 __init__
 
-defina uma variavel para ser executada quando instanciar a classe sem chamar essa variavel
+DEFINA UMA VARIAVEL PARA SER EXECUTADA QUANDO INSTANCIAR A CLASSE SEM CHAMAR ESSA VARIAVEL
 class Macarrao:
     def __init__(self, nome):
         self.nome = nome
@@ -105,7 +106,7 @@ p = Macarrao('diiego')
 
 print(p.nome)
 
-como é chamado o escopo das classes e metodos?
+COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
 namespaces
 
 como definir atributo de classe e atributo de instancia e como retornar um metodo da classe em outro metodo?
@@ -124,6 +125,7 @@ class test:
 p = test('diego')
 print(p.ace())
 
+22222222222222
 -------------------------------------------------------------------------------------------------------------------
 
 escreva um classe camera para manter o estados (filmar, fotografar, para_de_filmar) dentro dela. requisito de quando estiver filmando não pode fotografar
