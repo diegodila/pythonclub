@@ -127,7 +127,7 @@ print(p.ace())
 
 22222222222222
 -------------------------------------------------------------------------------------------------------------------
-
+33333333333333
 escreva um classe camera para manter o estados (filmar, fotografar, para_de_filmar) dentro dela. requisito de quando estiver filmando não pode fotografar
 
 class Camera:
@@ -175,7 +175,7 @@ class Pessoa:
         print(Pessoa.ano_atual)
         print(f'O print do atributo de classe com self {self.ano_atual}')
 
-
+33333333333333
 ---------------------------------------------------------------------------------------------
 
 O QUE É O __DICT__?
