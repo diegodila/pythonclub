@@ -100,6 +100,7 @@ ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
 
 33333333333333
 ---------------------------------------------------------------------------------------------
+44444444444444
 
 O QUE É O __DICT__?
 
@@ -124,9 +125,9 @@ PARA QUE SERVE O **KWARGS DO PYTHON?
 
 CONSTRUA UMA CLASSE COM PROPRIEDADES E DEPOIS TENHA UM DICIONARIO DE DADOS E DESEMPACOTE ELES
 
-
+44444444444444
 ---------------------------------------------
-
+55555555555555
 QUAL CONVENÇÃO DE NOME É UTILIZADA PARA CLASSE NO PYTHON?
 
 
@@ -168,7 +169,10 @@ O QUE É O METHOD?
 
 CONSTRUA UMA CLASSE COM STATICMETHOD E UTILIZE O ARGS E KWARGS NESSE METODO
 
+55555555555555
 -------------------------------------------------------------------------------------------------------------------------
+66666666666666
+
 O QUE O INIT FAZ E ELE É UMA METODO DE QUE?
 
 
@@ -192,6 +196,7 @@ QUANDO TEMOS UM UNDERLINE NA PROPRIEDADE OU NO QUE SIGNIFICA?
 
 ESCREVA UMA CLASSE COM GETTER AND SETTER ONDE A PROPRIEDADE SÓ POSSA SER MUDADA PELO SETTER, NÃO PELO INIT
 
+66666666666666
 -------------------------------------------------------------------------------------------------------------------------
 11 
 
