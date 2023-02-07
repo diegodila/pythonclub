@@ -177,6 +177,7 @@ class Pessoa:
 
 33333333333333
 ---------------------------------------------------------------------------------------------
+44444444444444
 
 O QUE É O __DICT__?
 é o dicionario que está dentro do objeto, ele matem um objeto do tipo mapping dentro das instancias da classes python. Ele mantem os valores que podem ser escritos dentro do objeto. Um dicionario que está dentro da instancias da classe python, é considerado um atributo que está dentro da classe, é onde os atributos da classe são salvos. Ele retem os valores do seu objeto
@@ -223,9 +224,9 @@ dados = {'nome':'Ds', 'idade':'2333'}
 
 p = Pessoa(**dados)
 
-
+44444444444444
 ---------------------------------------------
-
+55555555555555
 QUAL CONVENÇÃO DE NOME É UTILIZADA PARA CLASSE NO PYTHON?
 pascal case
 
@@ -327,7 +328,10 @@ class Pessoa:
         print(args,kwargs)
 Pessoa.ace(1,2,4)
 Pessoa.ace(dd=2,sdds=4)
+
+55555555555555
 -------------------------------------------------------------------------------------------------------------------------
+66666666666666
 
 O QUE O INIT FAZ E ELE É UMA METODO DE QUE?
 ele é uma metodo da instancia, que inicia o valores(dados) da instancia
@@ -374,8 +378,9 @@ class Caneta:
         print('passei')
         self._nome = valor
 
+66666666666666
 -------------------------------------------------------------------------------------------------------------------------
-11 
+77777777777777
 
 NO PYTHON EU TENHO MODIFICADORES DE ACESSO?
 não
@@ -427,3 +432,5 @@ print(caneta.escrever())
 print(maquina_de_escrever.escrever())
 print(escritor.ferramenta.escrever())
 
+
+77777777777777
