@@ -109,7 +109,7 @@ print(p.nome)
 COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
 namespaces
 
-como definir atributo de classe e atributo de instancia e como retornar um metodo da classe em outro metodo?
+COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
 class test:
     variavel = 'diego'
 
