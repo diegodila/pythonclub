@@ -128,7 +128,7 @@ print(p.ace())
 22222222222222
 -------------------------------------------------------------------------------------------------------------------
 33333333333333
-27: ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
+28: ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
 
 class Camera:
     def __init__(self, nome, filmando=False):
@@ -160,10 +160,10 @@ class Camera:
 
 
 
-28: QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
+29: QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
 self.<nome_atributo> ou <Classe>.<nome_atributo>
 
-29: ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
+30: ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
 class Pessoa:
     ano_atual = 2022
 
@@ -179,19 +179,19 @@ class Pessoa:
 ---------------------------------------------------------------------------------------------
 44444444444444
 
-O QUE É O __DICT__?
+31: O QUE É O __DICT__?
 é o dicionario que está dentro do objeto, ele matem um objeto do tipo mapping dentro das instancias da classes python. Ele mantem os valores que podem ser escritos dentro do objeto. Um dicionario que está dentro da instancias da classe python, é considerado um atributo que está dentro da classe, é onde os atributos da classe são salvos. Ele retem os valores do seu objeto
 
-COMO DELETAR UM DADO ATRIBUTO DE UMA CLASSE?
+32: COMO DELETAR UM DADO ATRIBUTO DE UMA CLASSE?
 del <instancia_classe>.<atributo_classe>
 
-ONDE OS ATRIBUTOS DA CLASSE SÃO SALVOS?
+33: ONDE OS ATRIBUTOS DA CLASSE SÃO SALVOS?
 __dict__
 
-QUAL A FUNÇÃO A QUE CONSEGUIMOS VER O __DICT__?
+34: QUAL A FUNÇÃO A QUE CONSEGUIMOS VER O __DICT__?
 vars(<objeto>)
 
-O __DICT__ É EDITAVEL? CONSTRUA UMA CLASSE!
+35: O __DICT__ É EDITAVEL? CONSTRUA UMA CLASSE!
 class Pessoa:
     def __init__(self,nome='Diego'):
         self.nome = nome
@@ -201,7 +201,7 @@ p.__dict__['sobrenome'] = 'G'
 
 print(vars(p))
 
-CRIE UM DICIONARIO DE DADOS E DESEMPACOTE EM UMA CLASSE
+36: CRIE UM DICIONARIO DE DADOS E DESEMPACOTE EM UMA CLASSE
 class Pessoa:
     def __init__(self, nome='Diego',idade='1000'):
         self.nome = nome
@@ -211,10 +211,10 @@ dados = {'nome':'Ds', 'idade':'2333'}
 
 p = Pessoa(**dados)
 
-PARA QUE SERVE O **KWARGS DO PYTHON?
+37: PARA QUE SERVE O **KWARGS DO PYTHON?
 para desempacotar um dicionario dentro do parametro, como se passasse varias chave valor em um simples **kwargs
 
-CONSTRUA UMA CLASSE COM PROPRIEDADES E DEPOIS TENHA UM DICIONARIO DE DADOS E DESEMPACOTE ELES
+38: CONSTRUA UMA CLASSE COM PROPRIEDADES E DEPOIS TENHA UM DICIONARIO DE DADOS E DESEMPACOTE ELES
 class Pessoa:
     def __init__(self, nome='Diego',idade='1000'):
         self.nome = nome
