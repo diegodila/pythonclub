@@ -227,13 +227,13 @@ p = Pessoa(**dados)
 44444444444444
 ---------------------------------------------
 55555555555555
-QUAL CONVENÇÃO DE NOME É UTILIZADA PARA CLASSE NO PYTHON?
+39: QUAL CONVENÇÃO DE NOME É UTILIZADA PARA CLASSE NO PYTHON?
 pascal case
 
-QUAL CONVENÇÃO DE NOME É UTILIZADA PARA NOMES NO PYTHON?
+40: QUAL CONVENÇÃO DE NOME É UTILIZADA PARA NOMES NO PYTHON?
 snake case
  
-CRIE UMA CLASSE PESSOA COM PROPRIEDADES DE NOME E SOBRENOME E SALVE OS DADOS DA CLASSE EM JSON
+41: CRIE UMA CLASSE PESSOA COM PROPRIEDADES DE NOME E SOBRENOME E SALVE OS DADOS DA CLASSE EM JSON
 class Pessoa:
 
     def __init__(self,nome='Diego',sobrenome=''):
@@ -252,7 +252,7 @@ def salvar_json():
         
 salvar_json()
 
-importe o modulo criado no python para ter o caminho do arquivo e faça a leitura dele
+42: IMPORTE O MODULO CRIADO NO PYTHON PARA TER O CAMINHO DO ARQUIVO E FAÇA A LEITURA DELE
 from work.pythonclub.f5_POO.from_module_json import PATH_TO_JSON, Pessoa
 import json
 
@@ -261,7 +261,7 @@ with open(PATH_TO_JSON,'r') as read_file:
 
 print(dados)
 
-importe a classe pessoa e passe os dados do f5_POO/json para essa classe
+43: IMPORTE A CLASSE PESSOA E PASSE OS DADOS DO F5_POO/JSON PARA ESSA CLASSE
 from work.pythonclub.f5_POO.from_module_json import PATH_TO_JSON, Pessoa
 import json
 
@@ -272,16 +272,16 @@ with open(PATH_TO_JSON,'r') as arquivo:
     
 p1.__dict__
 
-como adiar a execução de algo no arquivo python?
+44: COMO ADIAR A EXECUÇÃO DE ALGO NO ARQUIVO PYTHON?
 envolve em uma função
 
-qual é nome do modulo quando executamos diretamente?
+45: QUAL É NOME DO MODULO QUANDO EXECUTAMOS DIRETAMENTE?
 main
 
-como descobrir o nome do modulo?
+46: COMO DESCOBRIR O NOME DO MODULO?
 __name__
 
-ESCREVA UMA CLASSE QUE SÓ EXECUTE O METODO DENTRO DELA SE O MODULO FOR ELE MESMO
+47: ESCREVA UMA CLASSE QUE SÓ EXECUTE O METODO DENTRO DELA SE O MODULO FOR ELE MESMO
 class Pessoa:
     def __init__(self,nome='diego'):
         self.nome = nome
@@ -293,10 +293,10 @@ class Pessoa:
         print('Ele é o main')
         ace()
 
-PARA FAZER UM METODO DE CLASSE O QUE É NECESSARIO?
+48: PARA FAZER UM METODO DE CLASSE O QUE É NECESSARIO?
 o decorator em cima do metodo @classmethod
 
-CONSTRUA UMA CLASSE PESSOA COM ATRIBUTO E METODO DE CLASSE:
+49: CONSTRUA UMA CLASSE PESSOA COM ATRIBUTO E METODO DE CLASSE:
 class Pessoa:
     ano_atual = 2022
     def __init__(self,nome='Diego', idade=11):
@@ -312,13 +312,13 @@ p1 = Pessoa().cria_instancia('dsdi')
 
 p.__dict__
 
-O QUE É O DECORATOR @STATICMETHOD?
+50: O QUE É O DECORATOR @STATICMETHOD?
 é uma função que está dentro da classe, sem acesso a instancia e sem acesso ao cls
 
-O QUE É O METHOD?
+51: O QUE É O METHOD?
 é o metodo da instancia, com acesso ao self
 
-CONSTRUA UMA CLASSE COM STATICMETHOD E UTILIZE O ARGS E KWARGS NESSE METODO
+52: CONSTRUA UMA CLASSE COM STATICMETHOD E UTILIZE O ARGS E KWARGS NESSE METODO
 class Pessoa:
     def __init__(self,nome='Diego):
         self.nome = nome
