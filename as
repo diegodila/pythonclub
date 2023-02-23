@@ -90,30 +90,8 @@ SESSION 5
 -------------------------------------------------------------------------------------------------------------------
 33333333333333
 ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
-Class Camera:
-    def __init__(self,nome='Canon',filmando=False):
-        self.nome = nome
-        self.filmando = filmando
 
-    def filmar(self):
-        if self.filmando:
-            return f'A {self.nome} já está filmando'
 
-        self.filmando = True
-        print(f'A {self.nome} começou a filmar)
-
-    def fotografar(self):
-        if self.filmando:
-            return f'A {self.nome} não pode fotografar com a camera filmando'
-
-        print(f'A {self.nome} está fotografando)
-
-    def parar(self):
-        if self.filmando == False
-            return f'A {self.nome} já parou de filmar'
-
-        self.filmando = False
-        print(f'A {self.nome} está parando de filmar')
 QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
 
 
