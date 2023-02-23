@@ -2,7 +2,7 @@
 modulo
 
 2: COMO ECONTRAR A VERSAO DO PYTHON? 
-which python
+which python, python --version
 
 3: COMO FAZER O UPGRADE DO PYTHON?
 python -m pip install pip --upgrade
