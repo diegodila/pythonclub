@@ -84,13 +84,13 @@ sim
 11111111111111
 ---------------------------------------------------------------------------------------
 22222222222222
-UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
+22: UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
 infinitas
 
-NA CLASSE O QUE É O SELF?
+23: NA CLASSE O QUE É O SELF?
 é a propria instancia da classe
 
-QUAL METODO É EXECUTADO QUANDO INSTANCIA A CLASSE?
+24: QUAL METODO É EXECUTADO QUANDO INSTANCIA A CLASSE?
 __init__
 
 DEFINA UMA VARIAVEL PARA SER EXECUTADA QUANDO INSTANCIAR A CLASSE SEM CHAMAR ESSA VARIAVEL
@@ -106,10 +106,10 @@ p = Macarrao('diiego')
 
 print(p.nome)
 
-COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
+26: COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
 namespaces
 
-COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
+27: COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
 class test:
     variavel = 'diego'
 
@@ -128,7 +128,7 @@ print(p.ace())
 22222222222222
 -------------------------------------------------------------------------------------------------------------------
 33333333333333
-escreva um classe camera para manter o estados (filmar, fotografar, para_de_filmar) dentro dela. requisito de quando estiver filmando não pode fotografar
+27: ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
 
 class Camera:
     def __init__(self, nome, filmando=False):
@@ -160,10 +160,10 @@ class Camera:
 
 
 
-QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
+28: QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
 self.<nome_atributo> ou <Classe>.<nome_atributo>
 
-ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
+29: ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
 class Pessoa:
     ano_atual = 2022
 

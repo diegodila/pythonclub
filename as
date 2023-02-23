@@ -68,30 +68,52 @@ SESSION 5
 ---------------------------------------------------------------------------------------
 22222222222222
 
-UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
+22: UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
 
 
-NA CLASSE O QUE É O SELF?
+23: NA CLASSE O QUE É O SELF?
 
 
-QUAL METODO É EXECUTADO QUANDO INSTANCIA A CLASSE?
+24: QUAL METODO É EXECUTADO QUANDO INSTANCIA A CLASSE?
 
 
-DEFINA UMA VARIAVEL PARA SER EXECUTADA QUANDO INSTANCIAR A CLASSE SEM CHAMAR ESSA VARIAVEL
+25: DEFINA UMA VARIAVEL PARA SER EXECUTADA QUANDO INSTANCIAR A CLASSE SEM CHAMAR ESSA VARIAVEL
 
 
-COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
+26: COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
 
 
-COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
+27: COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
 
 
 22222222222222
 -------------------------------------------------------------------------------------------------------------------
 33333333333333
 ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
+Class Camera:
+    def __init__(self,nome='Canon',filmando=False):
+        self.nome = nome
+        self.filmando = filmando
 
+    def filmar(self):
+        if self.filmando:
+            return f'A {self.nome} já está filmando'
 
+        self.filmando = True
+        print(f'A {self.nome} começou a filmar)
+
+    def fotografar(self):
+        if self.filmando:
+            return f'A {self.nome} não pode fotografar com a camera filmando'
+
+        print(f'A {self.nome} está fotografando)
+
+    def parar(self):
+        if self.filmando == False
+            return f'A {self.nome} já parou de filmar'
+
+        self.filmando = False
+        print(f'A {self.nome} está parando de filmar')
 QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
 
 
