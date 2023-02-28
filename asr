@@ -333,20 +333,20 @@ Pessoa.ace(dd=2,sdds=4)
 -------------------------------------------------------------------------------------------------------------------------
 66666666666666
 
-O QUE O INIT FAZ E ELE É UMA METODO DE QUE?
+53: O QUE O INIT FAZ E ELE É UMA METODO DE QUE?
 ele é uma metodo da instancia, que inicia o valores(dados) da instancia
 
-O QUE É PROPERTY NO PYTHON?
+54: O QUE É PROPERTY NO PYTHON?
 é metodo que se comporta como uma propriedade do objeto, ela faz o método se comportar como atributo/propriedade
 é um getter de modo pythonico, é um metodo para obter o valor da propriedade
 
-QUAIS AS PRINCIPAIS SITUAÇÕES QUE É UTILIZADA O PROPERTY?
+55: QUAIS AS PRINCIPAIS SITUAÇÕES QUE É UTILIZADA O PROPERTY?
 como getter, p evitar quebrar codigo de cliente,p habilitar o setter, executar ações ao obter um atributo
 
-O QUE É CODIGO CLIENTE?
+56: O QUE É CODIGO CLIENTE?
 é o código que usa o seu código
 
-ESCREVA UM UM METODO DENTRO DE UMA CLASSE QUE SE COMPORTE COMO UMA PROPRIEDADE
+57: ESCREVA UM METODO DENTRO DE UMA CLASSE QUE SE COMPORTE COMO UMA PROPRIEDADE
 class Prancha:
     def __init__(self,marca='df'):
         self.marca = marca
@@ -355,16 +355,16 @@ class Prancha:
     def udd(self):
         return 'ddd'
 
-QUAL A FUNÇÃO GERAL DE UM MÉTODO?
+58: QUAL A FUNÇÃO GERAL DE UM MÉTODO?
 executar ações
 
-PARA ESCREVER UM SETTER NO MODO PYTHONICO O QUE É NECESSARIO?
+59: PARA ESCREVER UM SETTER NO MODO PYTHONICO O QUE É NECESSARIO?
 uma @property
  
-QUANDO TEMOS UM UNDERLINE NA PROPRIEDADE OU NO QUE SIGNIFICA?
-que a propriedade não devem ser usado, uma convenção para não usar esse atributo fora da classe
+60: QUANDO TEMOS UM UNDERLINE NA PROPRIEDADE OU NO QUE SIGNIFICA?
+que a propriedade não deve ser usado, uma convenção para não usar esse atributo fora da classe
 
-ESCREVA UMA CLASSE COM GETTER AND SETTER ONDE A PROPRIEDADE SÓ POSSA SER MUDADA PELO SETTER, NÃO PELO INIT
+61: ESCREVA UMA CLASSE COM GETTER AND SETTER ONDE A PROPRIEDADE SÓ POSSA SER MUDADA PELO SETTER, NÃO PELO INIT
 class Caneta:
     def __init__(self,nome):
         self.nome = nome
@@ -382,25 +382,25 @@ class Caneta:
 -------------------------------------------------------------------------------------------------------------------------
 77777777777777
 
-NO PYTHON EU TENHO MODIFICADORES DE ACESSO?
+62: NO PYTHON EU TENHO MODIFICADORES DE ACESSO?
 não
 
-COMO É REPRESENTADO O MODIFICADOR DE ACESSO PUBLIC NO PYTHON?
+63: COMO É REPRESENTADO O MODIFICADOR DE ACESSO PUBLIC NO PYTHON?
 normal, sem nenhum underline
 
-COMO É REPRESENTADO O MODIFICADOR DE ACESSO PROTECTED NO PYTHON?
+64: COMO É REPRESENTADO O MODIFICADOR DE ACESSO PROTECTED NO PYTHON?
 com um underline, não deve ser usado fora da classe, para sua classe e subclasses
 
-COMO É REPRESENTADO O MODIFICADOR DE ACESSO PRIVATE NO PYTHON?
+65: COMO É REPRESENTADO O MODIFICADOR DE ACESSO PRIVATE NO PYTHON?
 com dois underlines no python, somente para a sua classe, nem para classe filha (subclasses)
 
-O QUE É NAME MANGLING?
+66: O QUE É NAME MANGLING?
 desfiguração de nomes, so deve ser usado na classe em que foi declarado
 
-O QUE É ASSOCIAÇÃO EM OBJETOS PYTHON?
+67: O QUE É ASSOCIAÇÃO EM OBJETOS PYTHON?
 quando um objeto conhece o outro em uma relação fraca
 
-ESCREVA UMA CLASSE COM ASSOCIAÇÃO DE CLASSE ENTRE ESCRITOR E FERRAMENTA_DE_ESCREVER, GUARDE A ASSOCIAÇÃO DA FERRAMENTA_DE_ESCREVER NA PROPRIEDADE FERRAMENTA DA CLASSE ESCRITOR
+68: ESCREVA UMA CLASSE COM ASSOCIAÇÃO DE CLASSE ENTRE ESCRITOR E FERRAMENTA_DE_ESCREVER, GUARDE A ASSOCIAÇÃO DA FERRAMENTA_DE_ESCREVER NA PROPRIEDADE FERRAMENTA DA CLASSE ESCRITOR A CLASSE FERRAMENTA_DE_ESCREVER DEVERÁ TER UM METODO ESCREVER QUE RETORNA A PROPRIEDADE ESTÁ ESCREVENDO
 class Escritor:
     def __init__(self, nome) -> None:
         self.nome = nome
