@@ -434,3 +434,10 @@ print(escritor.ferramenta.escrever())
 
 
 77777777777777
+
+-------------------------------------------------------------------------
+69: O QUE É AGREGAÇÃO NA RELAÇÃO DE OBJETOS?
+é uma relação fraca que que é maior que a associação. Os objetos vivem separadamente, porém um precisa do outro, mas podem viver separadamente
+
+70: O QUE É ASSOCIAÇÃO NA RELAÇÃO DE OBJETOS?
+um objeto conhece o outro em uma relação fraca
