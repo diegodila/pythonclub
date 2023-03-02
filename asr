@@ -441,3 +441,12 @@ print(escritor.ferramenta.escrever())
 
 70: O QUE É ASSOCIAÇÃO NA RELAÇÃO DE OBJETOS?
 um objeto conhece o outro em uma relação fraca
+
+71: O QUE É A AGREGAÇÃO DA ASSOCIAÇÃO?
+uma especialização da associação
+
+72: QUE TIPO DE RELAÇÃO TEM OS OBJETOS DE AGREGAÇÃO?
+Geralmente é uma relação de um para muitos, onde um
+objeto tem um ou muitos objetos.
+
+73: 
