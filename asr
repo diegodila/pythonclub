@@ -449,7 +449,7 @@ uma especialização da associação
 Geralmente é uma relação de um para muitos, onde um
 objeto tem um ou muitos objetos.
 
-73: Construa uma classe de AGREGAÇÃO, onde seja a classe Carrinho e Produto, guarde os produtos na propriedade da classe Carrinho, coloque metodos de listar o preço (total_produtos), inserir produtos(inserir_produtos), listar os produtos(listar_produtos). A classe Produto, tem o nome e preço como dados.
+73: CONSTRUA UMA CLASSE DE AGREGAÇÃO, ONDE SEJA A CLASSE CARRINHO E PRODUTO, GUARDE OS PRODUTOS NA PROPRIEDADE DA CLASSE CARRINHO, COLOQUE METODOS DE LISTAR O PREÇO (TOTAL_PRODUTOS), INSERIR PRODUTOS(INSERIR_PRODUTOS), LISTAR OS PRODUTOS(LISTAR_PRODUTOS). A CLASSE PRODUTO, TEM O NOME E PREÇO COMO DADOS.
 class Carrinho:
     def __init__(self):
         self._produtos = []
