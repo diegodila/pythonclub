@@ -481,3 +481,11 @@ p1, p2 = Produto('Caneta', 1.20), Produto('Camiseta', 20)
 carrinho.inserir_produtos(p1, p2)
 carrinho.listar_produtos()
 print(carrinho.total())
+
+74: O QUE É COMPOSIÇÃO EM ORIENTAÇÃO A OBJETOS?
+é uma especialização da agregação, mas quando o objeto pai for apagado, todas as referencias dos objetos filhos também são apagadas
+
+75: A RELAÇÕES EM ORIENTAÇÃO A OBJETOS PRECISAM TER COMPOSIÇÃO?
+nenhuma relação precisa ter composição
+
+76: 
