@@ -33,54 +33,38 @@ SESSION 5
 11111111111111
 
 11: QUAL É UMA DAS PRIMEIRAS COISAS QUE É EXECUTADO QUANDO VOCE CHAMA UMA CLASSE?
-__init__
+
 
 12: COMO É CHAMADO A FUNÇÃO QUANDO ESTÁ DENTRO DA CLASSE?
-metodos
+
 
 13: QUAL É O PRIMEIRO PARAMETRO QUE PASSAMOS NO __INIT__?
-self
+
 
 14: COMO CRIAMOS UMA CLASSE PESSOA COM PARAMETROS DE NOME E SOBRENOME?
-class Pessoa:
-    def __init__(self,nome='Diego',sobrenome='Gonçalves'):
-        self.nome = nome
-        self.sobrenome = sobrenome
 
-p = Pessoa()
 
 15: COMO COLOCAR COMPORTAMENTOS EM UMA CLASSE?
-incluindo metodos
+
 
 16: O METODO INIT RETORNA O QUE?
-none
+
 
 17: ESCREVA UMA CLASSE COM HARD CODED
-class Cachorro:
-    def __init__(self):
-        self.nome = 'Diego'
 
-c = Cachorro
+
 18: O QUE É HARD CODED?
-algo que é escrito diretamente no codigo
+
 
 19: O QUE TODO METODO RECEBE COMO PRIMEIRO PARAMENTRO PARA REFERENCIAR A INSTANCIA NO PYTHON?
-self
+
 
 20: ESCREVA UMA CLASSE CARRO COM COMPORTAMENTO DE ACELERAR
-class Carro:
-    def __init__(self,nome='Nissan',acelerando=False):
-        self.nome = nome
 
-    def acelerar(self):
-        self.acelerando = True
-        return f'O {self.nome} está acelerando? {self.acelerando}'
-
-c = Carro()
-c.acelerar()
 
 21: O NOME SELF É UMA CONVENÇÃO?
-sim
+
+
 11111111111111
 ---------------------------------------------------------------------------------------
 22222222222222
