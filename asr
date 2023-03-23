@@ -488,4 +488,63 @@ print(carrinho.total())
 75: A RELAÇÕES EM ORIENTAÇÃO A OBJETOS PRECISAM TER COMPOSIÇÃO?
 nenhuma relação precisa ter composição
 
-76: 
+76: DESEMPACOTE UMA LISTA DE NOMES EM 3 VARIAVEIS
+nomes = ['Maria','helena','Luiz']
+nome1, nome3, nome3 = nomes
+
+77: TENHA UMA LISTA COM 3 VALORES, DESEMPACOTE O 1 VALOR EM UMA VARIAVEL E EMPACOTE O RESTANTE
+nome1, *resto = ['Maria','helena','Luiz']
+
+78: TENHA UMA LISTA COM 3 VALORES, DESEMPACOTE o 1 VALOR EM UMA VARIAVEL E EMPACOTE O RESTANTE COM A CONVENÇÃO DO PYTHON
+nome, *_ = ['Maria','helena','Luiz']
+
+79: TENHA UMA LISTA COM 3 VALORES, DESEMPACOTE O 2 VALOR EM UMA VARIAVEL E COLOQUE O PRIMEIRO VALOR NA CONVENÇÃO E EMPACOTE O RESTANTE COM A CONVENÇÃO DO PYTHON
+_,nome, *_ = ['Maria','helena','Luiz']
+
+80: TENHA UMA LISTA COM 3 VALORES, DESEMPACOTE O 3 VALOR EM UMA VARIAVEL  E EMPACOTE OS 2 PRIMEIROS COM A CONVENÇÃO DO PYTHON
+*_,nome = ['Maria','helena','Luiz']
+
+81: O QUE É UMA TUPLA?
+é uma lista imutável
+
+82: CRIE UMA LISTA COM 3 NOMES, DEPOIS ENUMERE ELAS, USE UMA FUNÇÃO PARA MOSTRAR O PRIMEIRO ITEM
+lista = ['Maria', 'João', 'José']
+lista_enumerada = enumerate(lista)
+next(lista_enumerada)
+
+83: CRIE UMA LISTA COM 3 NOMES, DEPOIS ENUMERE ELAS, MOSTRE TODOS OS ITEMS DAS ENUMERAÇÕES
+lista = ['Maria', 'João', 'José']
+lista_enumerada = enumerate(lista)
+for item in lista_enumerada:
+    print(item)
+
+84: O QUE ACONTECE QUANDO VOCÊ CONSOME O INTERATOR (ENUMERATE)?
+ele elima os dados, você tem mais acesso a ele, o ponteiro chegou até o o fim 
+
+85: O QUE O ENUMERATE FAZ?
+ele enumera cada item da sua lista
+
+86: ENUMERE UMA LISTA QUALQUER COM UM START NO 2 ITEM
+lista = ['Maria', 'João', 'José']
+lista_enumerada = list(enumerate(lista,start=2))
+
+87: CRIE UMA LISTA COM 3 NOMES, DEPOIS ENUMERE ELAS, MOSTRE TODOS OS ITEMS DAS ENUMERAÇÕES DESEMPACOTANDO ELA NAS VARIAVEIS INDICE, VALOR
+lista = ['Maria', 'João', 'José']
+for item in enumerate(lista):
+    indice, valor = item
+    print(f'O indice:-> {indice}, e o valor:-> {valor}')
+
+88: CRIE UMA LISTA COM 3 NOMES, DEPOIS ENUMERE ELAS, MOSTRE TODOS OS ITEMS DAS ENUMERAÇÕES DESEMPACOTANDO ELA NAS VARIAVEIS INDICE, VALOR NO MODO PYTHONICO
+lista = ['Maria', 'João', 'José']
+for indice, valor in enumerate(lista):
+    print(f'O indice:-> {indice}, e o valor:-> {valor}')
+
+89: Como eu faço para desempacotar um dicionario como parametro na função?
+**<dicionário>
+
+90: Como eu empacoto um dicionario quando estou construindo uma função?
+**kwargs
+
+91: Como passar argumentos nomeados de uma vez para uma função?
+**kwargs
+ 
