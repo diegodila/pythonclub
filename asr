@@ -542,9 +542,45 @@ for indice, valor in enumerate(lista):
 89: Como eu faço para desempacotar um dicionario como parametro na função?
 **<dicionário>
 
-90: Como eu empacoto um dicionario quando estou construindo uma função?
+90: COMO EU EMPACOTO UM DICIONARIO QUANDO ESTOU CONSTRUINDO UMA FUNÇÃO?
 **kwargs
 
-91: Como passar argumentos nomeados de uma vez para uma função?
+91: COMO PASSAR ARGUMENTOS NOMEADOS DE UMA VEZ PARA UMA FUNÇÃO?
 **kwargs
  
+92: DESEMPACOTE UM DICIONARIO COM 2 KEYWORDS, EM VARIAVEIS a,a1,b,b1
+dictinary = {'a':'1','b','2'}
+(a,a1),(b,b1) = dictinary.items()
+
+93: DESEMPACOTE 2 DICIONARIOS ALEATORIOS EM 1 VARIAVEL
+dictionary1 = {'a':'1','b':'2'}
+dictionary2 = {'c':'3','d':'4'}
+
+items = {**dictionary1,**dictionary2}
+
+94: CONSTRUA UMA FUNÇÃO QUE FAÇA UM EMPACOTAMENTO DE DICIONÁRIOS E TUPLAS
+def mostro_argumentos_nomeados(*args, **kwargs):
+    print(args,kwargs)
+
+95: DESEMPACOTE UM DICIONARIO DENTRO DE UMA FUNÇÃO COMO NÃO NOMEADO, ESSA FUNÇÃO TEM O EMPACOTAMENTO *ARGS E **KWARGS
+dictionary = {'a':'1','b':'2'}
+
+def desempacotar_dicionario_como_nao_nomeado(*args, **kwargs):
+    print(args,kwargs)
+    
+desempacotar_dicionario_como_nao_nomeado(dictionary)
+
+96: DESEMPACOTE UMA TUPLA (1,2,3,4) DENTRO DE UMA FUNÇÃO COMO NÃO NOMEADO, ESSA FUNÇÃO TEM O EMPACOTAMENTO *ARGS E **KWARGS, E FAÇA A SOMA DESSA TUPLA COM A FUNÇÃO SUM()
+tupla = (1,2,3,4)
+
+def desempacotar_tupla_como_nao_nomeado(*args, **kwargs):
+    print(args,kwargs)
+    print(sum(args))
+    
+desempacotar_tupla_como_nao_nomeado(*tupla)
+
+97: QUAL É O EMPACOTADOR DE ARGUMENTOS NÃO NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM TUPLA?
+*args
+
+98: QUAL É O EMPACOTADOR DE ARGUMENTOS NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM DICIONÁRIO?
+**kwargs
