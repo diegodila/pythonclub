@@ -519,7 +519,7 @@ for item in lista_enumerada:
     print(item)
 
 84: O QUE ACONTECE QUANDO VOCÊ CONSOME O INTERATOR (ENUMERATE)?
-ele elima os dados, você tem mais acesso a ele, o ponteiro chegou até o o fim 
+ele elimina os dados, você não tem mais acesso a ele, o ponteiro chegou até o o fim 
 
 85: O QUE O ENUMERATE FAZ?
 ele enumera cada item da sua lista
@@ -584,3 +584,8 @@ desempacotar_tupla_como_nao_nomeado(*tupla)
 
 98: QUAL É O EMPACOTADOR DE ARGUMENTOS NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM DICIONÁRIO?
 **kwargs
+
+99: O que é garbet collector?
+quando a linguegem ve que não existe mais referencia para aquele determinado objeto, ela apaga esse objeto da memoria
+
+100:
