@@ -585,7 +585,58 @@ desempacotar_tupla_como_nao_nomeado(*tupla)
 98: QUAL É O EMPACOTADOR DE ARGUMENTOS NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM DICIONÁRIO?
 **kwargs
 
-99: O que é garbet collector?
+99: O QUE É GARBET COLLECTOR?
 quando a linguegem ve que não existe mais referencia para aquele determinado objeto, ela apaga esse objeto da memoria
 
-100:
+100: QUAL A DIFERENÇA DA COMPOSIÇÃO PARA AGREGAÇÃO?
+quando você apaga o todo, todas as partes desse todo somem, ex:Como se tivessem a classe produto e carrinho, e esse produtos fizessem parte do carrinho, apagando o carrinho os produtos também somem, quando você apaga o pai de todos os objetos, os objetos parte também sumirão
+
+101: MOSTRE A HIERARQUIA DA COMPOSIÇÃO, ASSOCIAÇÃO, AGREGAÇÃO
+associação, agregação, composição
+
+102: O QUE É A COMPOSIÇÃO EM RELAÇÃO A AGREGAÇÃO?
+é uma especialização da agregação
+
+103: ESCREVA UMA CLASSE COM COMPOSIÇÃO ENTRE A CLASSE CLIENTE E ENDERECO, A CLASSE CLIENTE TEM AS PROPRIEDADES: NOME E ENDERECO, A CLASSE ENDERECO TEM AS PROPRIEDADES: RUA E NUMERO. FAÇA UMA COMPOSIÇÃO PELO MÉTODO INSERIR_ENDERECO, E MOSTRE O FUNCIONAMENTO COM OUTRO METODO INSERINDO DE FORMA EXTERNA INSERIR_ENDERECO_EXTERNO
+class Cliente:
+    def __init__(self, nome):
+        self.nome = nome
+        self.enderecos = []
+
+    def inserir_endereco(self, rua, numero):
+        self.enderecos.append(Endereco(rua, numero))
+
+    def inserir_endereco_externo(self, endereco):
+        self.enderecos.append(endereco)
+
+    def listar_enderecos(self):
+        for endereco in self.enderecos:
+            print(endereco.rua, endereco.numero)
+
+    def __del__(self):
+        print('APAGANDO,', self.nome)
+
+
+class Endereco:
+    def __init__(self, rua, numero):
+        self.rua = rua
+        self.numero = numero
+
+    def __del__(self):
+        print('APAGANDO,', self.rua, self.numero)
+
+
+cliente1 = Cliente('Maria')
+cliente1.inserir_endereco('Av Brasil', 54)
+cliente1.inserir_endereco('Rua B', 6745)
+endereco_externo = Endereco('Av Saudade', 123213)
+cliente1.inserir_endereco_externo(endereco_externo)
+cliente1.listar_enderecos()
+
+del cliente1
+
+
+print(endereco_externo.rua, endereco_externo.numero)
+print('######################## AQUI TERMINA MEU CÓDIGO')
+
+104:
