@@ -228,7 +228,7 @@ SESSION 5
 
 -------------------------------------------------------------------------
 69: O QUE É AGREGAÇÃO NA RELAÇÃO DE OBJETOS?
-ainda é uma relação fraca onde os objetos se conhecem
+
 
 70: O QUE É ASSOCIAÇÃO NA RELAÇÃO DE OBJETOS?
 
