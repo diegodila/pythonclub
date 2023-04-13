@@ -316,3 +316,8 @@ SESSION 5
 
 98: QUAL É O EMPACOTADOR DE ARGUMENTOS NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM DICIONÁRIO?
 
+
+99: O QUE É GARBET COLLECTOR?
+quando a linguegem ve que não existe mais referencia para aquele determinado objeto, ela apaga esse objeto da memoria
+
+100:
