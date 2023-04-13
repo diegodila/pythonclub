@@ -597,7 +597,7 @@ associação, agregação, composição
 102: O QUE É A COMPOSIÇÃO EM RELAÇÃO A AGREGAÇÃO?
 é uma especialização da agregação
 
-103: ESCREVA UMA CLASSE COM COMPOSIÇÃO ENTRE A CLASSE CLIENTE E ENDERECO, A CLASSE CLIENTE TEM AS PROPRIEDADES: NOME E ENDERECO, A CLASSE ENDERECO TEM AS PROPRIEDADES: RUA E NUMERO. FAÇA UMA COMPOSIÇÃO PELO MÉTODO INSERIR_ENDERECO, E MOSTRE O FUNCIONAMENTO COM OUTRO METODO INSERINDO DE FORMA EXTERNA INSERIR_ENDERECO_EXTERNO
+103: ESCREVA UMA CLASSE COM COMPOSIÇÃO ENTRE A CLASSE CLIENTE E ENDERECO, A CLASSE CLIENTE TEM AS PROPRIEDADES: NOME E ENDERECO, A CLASSE ENDERECO TEM AS PROPRIEDADES: RUA E NUMERO. FAÇA UMA COMPOSIÇÃO PELO MÉTODO INSERIR_ENDERECO, E MOSTRE O FUNCIONAMENTO COM OUTRO METODO INSERINDO DE FORMA EXTERNA INSERIR_ENDERECO_EXTERNO. COLOQUE O METODO __DEL__ PARA MOSTRAR O GARBET COLLECTOR E PRINT NO FINAL O ENDERECO CRIADO EXTERNO, DEPOIS AQUI TERMINA O CODIGO
 class Cliente:
     def __init__(self, nome):
         self.nome = nome
@@ -639,4 +639,4 @@ del cliente1
 print(endereco_externo.rua, endereco_externo.numero)
 print('######################## AQUI TERMINA MEU CÓDIGO')
 
-104:
+104: Exercício com classes 1 - Crie uma classe Carro (Nome), 2 - Crie uma classe Motor (Nome), 3 - Crie uma classe Fabricante (Nome), 4 - Faça a ligação entre Carro tem um Motor. Obs.: Um motor pode ser de vários carros, 5 - Faça a ligação entre Carro e um Fabricante . Obs.: Um fabricante pode fabricar vários carros Exiba o nome do carro, motor e fabricante na tela
