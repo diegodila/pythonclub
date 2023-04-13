@@ -359,10 +359,10 @@ class Prancha:
 executar ações
 
 59: PARA ESCREVER UM SETTER NO MODO PYTHONICO O QUE É NECESSARIO?
-uma @property
+uma @property, o decoretor @property e o outro decoretor <nome_propriedade>.setter
  
 60: QUANDO TEMOS UM UNDERLINE NA PROPRIEDADE OU NO METODO, O QUE SIGNIFICA?
-que a propriedade não deve ser usado, uma convenção para não usar esse atributo fora da classe
+que a propriedade ou o metodo não deve ser usado, uma convenção para não usar esse atributo fora da classe
 
 61: ESCREVA UMA CLASSE COM GETTER AND SETTER ONDE A PROPRIEDADE SÓ POSSA SER MUDADA PELO SETTER, NÃO PELO INIT
 class Caneta:
