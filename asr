@@ -640,3 +640,69 @@ print(endereco_externo.rua, endereco_externo.numero)
 print('######################## AQUI TERMINA MEU CÓDIGO')
 
 104: EXERCÍCIO COM CLASSES 1 - CRIE UMA CLASSE CARRO (NOME), 2 - CRIE UMA CLASSE MOTOR (NOME), 3 - CRIE UMA CLASSE FABRICANTE (NOME), 4 - FAÇA A LIGAÇÃO ENTRE CARRO TEM UM MOTOR. OBS.: UM MOTOR PODE SER DE VÁRIOS CARROS, 5 - FAÇA A LIGAÇÃO ENTRE CARRO E UM FABRICANTE . OBS.: UM FABRICANTE PODE FABRICAR VÁRIOS CARROS EXIBA O NOME DO CARRO, MOTOR E FABRICANTE NA TELA
+
+105: QUAIS SÃO OS PILARES DA POO?
+abastração, poliformismo, encapsulamento e herança
+
+106: QUAL A MANEIRA SIMPLES DE DESCREVER A RELAÇÃO DE OBJETOS NA ASSOCIAÇÃO, AGREGAÇÃO, COMPOSIÇÃO
+associação usa, agregação tem, composição é dono de
+
+107: QUAL É A RELAÇÃP DE OBJETOS NA HERANÇA?
+é um objeto
+
+108: QUANDO A GENTE FALA EM HERANÇA O QUE COMUM DIZER?
+que uma classe extende a outra classe, ex: Cliente extende Pessoa
+
+109: POR QUE A GENTE UTILIZA HERANÇA?
+Pra deixar uma classe muito especifica mais generica, para poder reutilizar essa classe para outras classes
+
+110: QUANDO TEM UMA SUPERCLASSE NA HERANÇA O QUE ACONTECE?
+tudo que estiver na superclasse como metodos e atributos vão passar para a classe filha
+
+111: COMO CHAMAMOS A CLASSE PRINCIPAL NA HERANÇA?
+super class, base class, parent class
+
+112: COMO CHAMAMOS AS CLASSES FILHAS NA HERANÇA?
+sub class, child class, derived class
+
+113: TODAS AS CLASSES HERDAM O QUE?
+herdam do builtins o object, fazendo automticamete a herança do seu objeto do object
+
+114: CRIE UMA HERANÇA SIMPLES ONDE CLIENTE EXTENDE DE PESSOA
+class Pessoa:
+    def __init__(self,nome=None,sobrenome=None):
+        self.nome = nome
+        self.sobrenome = sobrenome
+
+class Cliente(Pessoa):
+    ...
+    
+c = Cliente('Diego','Gonçalves')
+
+115: CRIE UMA HERANÇA SIMPLES ONDE CLIENTE E ALUNO EXTENDE DE PESSOA, COLOQUE UMA MÉTODO NA CLASSE PESSOA PARA MOSTRAR O NOME DA CLASSE E SEUS ATRIBUTOS
+class Pessoa:
+    def __init__(self,nome=None,sobrenome=None):
+        self.nome = nome
+        self.sobrenome = sobrenome
+
+    def nome_da_classe(self):
+        print(f'Atributo:\t{self.nome} \nAtributo: \t{self.sobrenome} \nNome da classe: \t{self.__class__.__name__}')
+
+class Cliente(Pessoa):
+    ...
+
+class Aluno(Pessoa):
+    ...
+    
+c = Cliente('Diego','Gonçalves')
+a = Aluno('José','X')
+c.nome_da_classe()
+a.nome_da_classe()
+
+116: O QUE ACONTECE QUANDO TEMOS O MESMO METODO OU ATRIBUTO NA CLASS FILHA E CLASSE PAI, PELO METHOD RESOLUTION ORDER?
+o method resolution order busca o metodo ou atributo por hierarquia, quando encontra na classe filha e ele executa a classe filha 
+
+117: PARA EVITAR A COMPLEXIDADE DE HERANÇA, QUAL É O IDEAL DE NÍVEIS DE OBJETOS?
+3 níveis, depois disso a complexidade aumenta muito
+
+
