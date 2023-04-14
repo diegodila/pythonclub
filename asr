@@ -639,4 +639,4 @@ del cliente1
 print(endereco_externo.rua, endereco_externo.numero)
 print('######################## AQUI TERMINA MEU CÓDIGO')
 
-104: Exercício com classes 1 - Crie uma classe Carro (Nome), 2 - Crie uma classe Motor (Nome), 3 - Crie uma classe Fabricante (Nome), 4 - Faça a ligação entre Carro tem um Motor. Obs.: Um motor pode ser de vários carros, 5 - Faça a ligação entre Carro e um Fabricante . Obs.: Um fabricante pode fabricar vários carros Exiba o nome do carro, motor e fabricante na tela
+104: EXERCÍCIO COM CLASSES 1 - CRIE UMA CLASSE CARRO (NOME), 2 - CRIE UMA CLASSE MOTOR (NOME), 3 - CRIE UMA CLASSE FABRICANTE (NOME), 4 - FAÇA A LIGAÇÃO ENTRE CARRO TEM UM MOTOR. OBS.: UM MOTOR PODE SER DE VÁRIOS CARROS, 5 - FAÇA A LIGAÇÃO ENTRE CARRO E UM FABRICANTE . OBS.: UM FABRICANTE PODE FABRICAR VÁRIOS CARROS EXIBA O NOME DO CARRO, MOTOR E FABRICANTE NA TELA
