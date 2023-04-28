@@ -721,7 +721,7 @@ c = MinhaString('diego')
 c.upper()
 
 
-120: Construa uma classe que herde tudo de str, faça a sobreposição do método upper, e inclua um print apenas mas continue com todas as funcionalidades do metodo upper:
+120: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR, FAÇA A SOBREPOSIÇÃO DO MÉTODO UPPER, E INCLUA UM PRINT APENAS MAS CONTINUE COM TODAS AS FUNCIONALIDADES DO METODO UPPER:
 class MinhaString(str):
     def upper(self):
         print('sobreescrevi o upper method')
