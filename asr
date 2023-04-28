@@ -586,7 +586,7 @@ desempacotar_tupla_como_nao_nomeado(*tupla)
 **kwargs
 
 99: O QUE É GARBET COLLECTOR?
-quando a linguegem ve que não existe mais referencia para aquele determinado objeto, ela apaga esse objeto da memoria
+quando a linguagem ve que não existe mais referencia para aquele determinado objeto, ela apaga esse objeto da memoria
 
 100: QUAL A DIFERENÇA DA COMPOSIÇÃO PARA AGREGAÇÃO?
 quando você apaga o todo, todas as partes desse todo somem, ex:Como se tivessem a classe produto e carrinho, e esse produtos fizessem parte do carrinho, apagando o carrinho os produtos também somem, quando você apaga o pai de todos os objetos, os objetos parte também sumirão
@@ -647,7 +647,7 @@ abastração, poliformismo, encapsulamento e herança
 106: QUAL A MANEIRA SIMPLES DE DESCREVER A RELAÇÃO DE OBJETOS NA ASSOCIAÇÃO, AGREGAÇÃO, COMPOSIÇÃO
 associação usa, agregação tem, composição é dono de
 
-107: QUAL É A RELAÇÃP DE OBJETOS NA HERANÇA?
+107: QUAL É A RELAÇÃO DE OBJETOS NA HERANÇA?
 é um objeto
 
 108: QUANDO A GENTE FALA EM HERANÇA O QUE COMUM DIZER?
@@ -679,7 +679,7 @@ class Cliente(Pessoa):
     
 c = Cliente('Diego','Gonçalves')
 
-115: CRIE UMA HERANÇA SIMPLES ONDE CLIENTE E ALUNO EXTENDE DE PESSOA, COLOQUE UMA MÉTODO NA CLASSE PESSOA PARA MOSTRAR O NOME DA CLASSE E SEUS ATRIBUTOS
+115: CRIE UMA HERANÇA SIMPLES ONDE CLIENTE E ALUNO EXTENDE DE PESSOA, COLOQUE UM MÉTODO NA CLASSE PESSOA PARA MOSTRAR O NOME DA CLASSE E SEUS ATRIBUTOS
 class Pessoa:
     def __init__(self,nome=None,sobrenome=None):
         self.nome = nome
@@ -705,4 +705,24 @@ o method resolution order busca o metodo ou atributo por hierarquia, quando enco
 117: PARA EVITAR A COMPLEXIDADE DE HERANÇA, QUAL É O IDEAL DE NÍVEIS DE OBJETOS?
 3 níveis, depois disso a complexidade aumenta muito
 
+118: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR 
+class MinhaString(str):
+    ...
 
+c = MinhaString('diego')
+c.upper()
+
+119: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR, PORÉM FAÇA O MÉTODO UPPER SOBRESCREVER COMPLETAMENTE E RETORNAR NONE:
+class MinhaString(str):
+    def upper(self):
+        ...
+
+c = MinhaString('diego')
+c.upper()
+
+
+120: Construa uma classe que herde tudo de str, faça a sobreposição do método upper, e inclua um print apenas mas continue com todas as funcionalidades do metodo upper:
+class MinhaString(str):
+    def upper(self):
+        print('sobreescrevi o upper method')
+        return super().upper()
