@@ -380,4 +380,28 @@ SESSION 5
 119: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR, PORÉM FAÇA O MÉTODO UPPER SOBRESCREVER COMPLETAMENTE E RETORNAR NONE:
 
 
-120: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR, FAÇA A SOBREPOSIÇÃO DO MÉTODO UPPER, E INCLUA UM PRINT APENAS MAS CONTINUE COM TODAS AS FUNCIONALIDADES DO METODO 
+120: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR, FAÇA A SOBREPOSIÇÃO DO MÉTODO UPPER, E INCLUA UM PRINT APENAS MAS CONTINUE COM TODAS AS FUNCIONALIDADES DO METODO
+
+121: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR, FAÇA A SOBREPOSIÇÃO DO MÉTODO UPPER, E INCLUA UM PRINT APENAS MAS CONTINUE COM TODAS AS FUNCIONALIDADES DO METODO nesse caso passe os 2 paremetros para o super
+
+
+122: Construa uma heraça de mro 3, onde A, B, C tenham os proprios atributos, porem a classe B sobrescreve o metodo chamado metodo da class A, e C da classe B:
+
+class A:
+    atributo_a = 'valor_a'
+
+    def metodo(self):
+        print('A')
+
+class B(A):
+    atributo_b = 'valor_b'
+
+    def metodo(self):
+        print('B')
+
+
+class C(B):
+    atributo_c = 'valor_c'
+
+    def metodo(self):
+        print('C')

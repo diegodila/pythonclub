@@ -726,3 +726,56 @@ class MinhaString(str):
     def upper(self):
         print('sobreescrevi o upper method')
         return super().upper()
+
+
+121: CONSTRUA UMA CLASSE QUE HERDE TUDO DE STR, FAÇA A SOBREPOSIÇÃO DO MÉTODO UPPER, E INCLUA UM PRINT APENAS MAS CONTINUE COM TODAS AS FUNCIONALIDADES DO METODO nesse caso passe os 2 paremetros para o super
+class MinhaString(str):
+    def upper(self):
+        print('sobreescrevi o upper method')
+        return super(MinhaString,self).upper()
+
+122: CONSTRUA UMA HERAÇA DE MRO 3, ONDE A, B, C TENHAM OS PROPRIOS ATRIBUTOS, POREM A CLASSE B SOBRESCREVE O METODO CHAMADO METODO DA CLASS A, E C DA CLASSE B:
+class A:
+    atributo_a = 'valor_a'
+
+    def metodo(self):
+        print('A')
+
+class B(A):
+    atributo_b = 'valor_b'
+
+    def metodo(self):
+        print('B')
+
+
+class C(B):
+    atributo_c = 'valor_c'
+
+    def metodo(self):
+        print('C')
+
+
+123: QUAL É O METODO QUE RETORNA O METHOD RESOLUTION ORDER?
+<class>.mro()
+
+124: CONSTRUA UMA HERAÇA DE MRO 3, ONDE A, B, C TENHAM OS PROPRIOS ATRIBUTOS, POREM A CLASSE B SOBRESCREVE O METODO CHAMADO METODO DA CLASS A, E C DA CLASSE B, pelo metodo na classe C, chame o metodo da classe A, utilizando o super
+class A:
+    atributo_a = 'valor_a'
+
+    def metodo(self):
+        print('A')
+
+class B(A):
+    atributo_b = 'valor_b'
+
+    def metodo(self):
+        print('B')
+
+
+class C(B):
+    atributo_c = 'valor_c'
+
+    def metodo(self):
+        super().metodo()
+        super(B,self).metodo()
+        print('C')
