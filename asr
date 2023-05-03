@@ -212,7 +212,8 @@ dados = {'nome':'Ds', 'idade':'2333'}
 p = Pessoa(**dados)
 
 37: PARA QUE SERVE O **KWARGS DO PYTHON?
-para desempacotar um dicionario dentro do parametro, como se passasse varias chave valor em um simples **kwargs
+para empacotar os dados da função em dicionario e receber varias chaves/valores dentro do dicionario
+empacotar um dicionario dentro do parametro, como se passasse varias chaves/valor em um simples **kwargs 
 
 38: CONSTRUA UMA CLASSE COM PROPRIEDADES E DEPOIS TENHA UM DICIONARIO DE DADOS E DESEMPACOTE ELES
 class Pessoa:
@@ -276,10 +277,10 @@ p1.__dict__
 envolve em uma função
 
 45: QUAL É NOME DO MODULO QUANDO EXECUTAMOS DIRETAMENTE?
-main
+__main__
 
 46: COMO DESCOBRIR O NOME DO MODULO?
-__name__
+print(__name__)
 
 47: ESCREVA UMA CLASSE QUE SÓ EXECUTE O METODO DENTRO DELA SE O MODULO FOR ELE MESMO
 class Pessoa:
