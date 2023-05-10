@@ -759,7 +759,7 @@ class C(B):
 123: QUAL É O METODO QUE RETORNA O METHOD RESOLUTION ORDER?
 <class>.mro()
 
-124: CONSTRUA UMA HERAÇA DE MRO 3, ONDE A, B, C TENHAM OS PROPRIOS ATRIBUTOS, POREM A CLASSE B SOBRESCREVE O METODO CHAMADO METODO DA CLASS A, E C DA CLASSE B, pelo metodo na classe C, chame o metodo da classe A, utilizando o super
+124: CONSTRUA UMA HERAÇA DE MRO 3, ONDE (A, B, C) TENHAM OS PROPRIOS ATRIBUTOS. POREM A CLASSE (B) SOBRESCREVE O METODO CHAMADO "METODO_DE_HERANÇA" DA CLASS A, E A CLASSE (C) O DA CLASSE (B). CHAME NA CLASSE (C) DENTRO DO MÉTODO O MÉTODO CHAMADO "METODO_DE_HERANCA" DA CLASSE A, UTILIZANDO O SUPER
 class A:
     atributo_a = 'valor_a'
 
@@ -780,3 +780,145 @@ class C(B):
         super().metodo()
         super(B,self).metodo()
         print('C')
+
+class A(object):
+    atributo_a = 'valor a'
+
+    def __init__(self, atributo):
+        self.atributo = atributo
+
+    def metodo(self):
+        print('A')
+
+
+class B(A):
+    atributo_b = 'valor b'
+
+    def __init__(self, atributo, outra_coisa):
+        super().__init__(atributo)
+        self.outra_coisa = outra_coisa
+
+    def metodo(self):
+        print('B')
+
+
+class C(B):
+    atributo_c = 'valor c'
+
+    def __init__(self, *args, **kwargs):
+        # print('EI, burlei o sistema.')
+        super().__init__(*args, **kwargs)
+
+    def metodo(self):
+        # super().metodo()  # B
+        # super(B, self).metodo()  # A
+        # super(A, self).metodo()  # object
+        A.metodo(self)
+        B.metodo(self)
+        print('C')
+
+125: Qual é o conceito de herança simples?
+geralmente é uma familia de alguma coisa, generalizando as classes ou deixando mais especificas ex: Animal -> Mamifero -> Pessoa -> Cliente
+
+126: Qual é o conceito de herança multipla?
+as classes podem herdar de mais uma classe
+
+127: Qual é o padrão que pode ser usado na herança multipla?
+mixins
+
+128: O que é mixins em herança?
+é uma classe que nao faz parte daquela familia
+
+129: Qual é o problema do diamante, mostre na classes(a,b,c,d):
+D(B,C) - C(A) - B(A) - A 
+
+          A
+        /   \
+        B   C
+        \   /
+          D
+
+130: O que é C3 superclass linearization na versão 3.2 e acima?
+é o algoritmo que utilizado para gerar o mro, method resolution order
+
+131: Construa o problema do diamante usando herança multipla com as classes (A, B, C, D)
+class A:
+    ...
+
+    def quem_sou(self):
+        print('A')
+
+
+class B(A):
+    ...
+
+    # def quem_sou(self):
+    #     print('B')
+
+
+class C(A):
+    ...
+
+    def quem_sou(self):
+        print('C')
+
+
+class D(B, C):
+    ...
+
+    def quem_sou(self):
+        print('D')
+
+
+d = D()
+d.quem_sou()
+# print(D.__mro__)
+print(D.mro())
+
+132: qual é a boa prática no try exception, especificamente no exception?
+informar o erro no exception
+
+133: Em python o que são exceções?
+são classes
+
+134: Todas as classes de exceções herdam de qual classe?
+Exception
+
+135: Qual é a classe que trata qualquer erro do python?
+Exception
+
+136: Escreva um try except onde no try tenha um erro de divisão e trate especificamente esse erro, printando que dividiu por zero:
+try:
+    a = 18
+    b = 0
+    valor = a / b
+except ZeroDivisionError:
+    print('Dividiu por zero')
+
+137: Escreva um try except onde qualquer error seja tratado com print 'Cai no exception'
+try:
+    a = 18
+    b = 0
+    valor = a / b
+except Exception:
+    print('Dividiu por zero')
+
+138: Escreva um try except onde eu consiga tratar 2 erros ao mesmo tempo, erro de tipo e erro de index
+try:
+    a = 18
+    b = 0
+    valor = a / b[0]
+except (IndexError, TypeError):
+    print('Index e Type error')
+
+139: Escreva um try except onde eu consiga tratar 2 erros ao mesmo tempo, erro de tipo e erro de index, e print a instancia do erro e o nome da classe do erro
+try:
+    a = 18
+    b = 0
+    valor = a / b[0]
+except (IndexError, TypeError) as error:
+    print('Index e Type error')
+    print('MSG', error)
+    print('Nome:',error.__class__.__name__)
+
+140:

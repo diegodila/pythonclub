@@ -1,128 +1,195 @@
 1: O QUE SIGNIFICA O M  NO PYTHON3 -M VENV VENV?
-
+modulo 
 
 2: COMO ENCONTRAR A VERSAO DO PYTHON? 
-
+python --version, which python
 
 3: COMO FAZER O UPGRADE DO PYTHON?
-
+python pip install --upgrade
 
 4: COMO EXECUTAR UM PROGRAMA PYTHON?
-
+python <main.py>
 
 5: COMO LISTAR TODAS AS VERSOES DO PYENV?
-
+pyenv install -l
 
 6: COMO MOSTRAR QUAIS PYTHONS ESTAO INSTALADOS?
-
+pyenv version python
 
 7: COMO DEFINIR O PYTHON PADRAO ATRAVES DO PYENV?
-
+pyenv global <vesion python>
 
 8: COMO FAZER UM TEXTO SER INTERPRETADO PELO PYTHON?
-
+''' ''' """ """
 
 9: O DOCSTRING É UM COMENTARIO NO PYTHON?
-
+não pq ele é interpretado pelo python o comentario não
 
 10: COMO FUNCIONA O COMENTARIO NO INTERPRETADOR PYTHON?
-
+ignora tudo a partir da cerquilha
 
 -------------------------------------------------------------
 SESSION 5
 11111111111111
 
 11: QUAL É UMA DAS PRIMEIRAS COISAS QUE É EXECUTADO QUANDO VOCE CHAMA UMA CLASSE?
-
+init
 
 12: COMO É CHAMADO A FUNÇÃO QUANDO ESTÁ DENTRO DA CLASSE?
-
+metodo
 
 13: QUAL É O PRIMEIRO PARAMETRO QUE PASSAMOS NO __INIT__?
-
+self
 
 14: COMO CRIAMOS UMA CLASSE PESSOA COM PARAMETROS DE NOME E SOBRENOME?
-
+class Pessoa:
+    def __init__(self,nome=None,sobrenome=None):
+        self.nome = nome
+        self.sobrenome = sobrenome
 
 15: COMO COLOCAR COMPORTAMENTOS EM UMA CLASSE?
-
+incluindo metodos
 
 16: O METODO INIT RETORNA O QUE?
-
+none
 
 17: ESCREVA UMA CLASSE COM HARD CODED
+class Pessoa:
+    def __init__(self,nome=None):
+        self.nome = nome
+        self.sobrenome = 'Gonçalves'
 
 
 18: O QUE É HARD CODED?
-
+algo que é escrito diretamente no codigo
 
 19: O QUE TODO METODO RECEBE COMO PRIMEIRO PARAMENTRO PARA REFERENCIAR A INSTANCIA NO PYTHON?
-
+self
 
 20: ESCREVA UMA CLASSE CARRO COM COMPORTAMENTO DE ACELERAR
+class Carro:
+    def __init__(self,nome=None):
+        self.nome = nome
 
+    def acelerar(self,param):
+        return f'O {self.nome} está acelerando e passe o param:{param}'
 
 21: O NOME SELF É UMA CONVENÇÃO?
-
+sim
 
 11111111111111
 ---------------------------------------------------------------------------------------
 22222222222222
 
 22: UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
-
+infinitas
 
 23: NA CLASSE O QUE É O SELF?
-
+se refere a propria instancia
 
 24: QUAL METODO É EXECUTADO QUANDO INSTANCIA A CLASSE?
-
+o construtor init, responsavel por iniciar os atributos da classe
 
 25: DEFINA UMA VARIAVEL PARA SER EXECUTADA QUANDO INSTANCIAR A CLASSE SEM CHAMAR ESSA VARIAVEL
-
+class Oculos:
+    def __init__(self,nome=None):
+        self.nome = nome
+        variavel = 2020
+        print(variavel)
 
 26: COMO É CHAMADO O ESCOPO DAS CLASSES E METODOS?
-
+namespaces
 
 27: COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
+class Pessoa:
+    variavel =2023
+    def __init__(self,nome=None):
+        self.nome = nome
 
+    def acelerar(self):
+        return f'O {self.nome} está acelerando'
+
+    def acer(*args):
+        return self.acelerar(args)
 
 22222222222222
 -------------------------------------------------------------------------------------------------------------------
 33333333333333
 28: ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
+class Camera:
+    def __init__(self,nome=None, filmando=False):
+        self.nome = nome
+        self.filmando = filmando
+        
+    
+    def filmar(self):
+        if self.filmando:
+            return f'A {self.nome} já está filmando'
 
+        self.filmando = True
+        return f'A {self.nome} começou a filmar'
+
+    def fotografar(self)
+        if self.filmando:
+            return f'A {self.nome} não pode fotografar com a camera filmando'
+
+        return f'A {self.nome} está fotografando'
+
+    def parar(self):
+        if self.filmando:
+            self.filmando = False
+            return f'A {self.nome} está parando de filmar'
+
+        return f'A {self.nome} já parou de filmar'
 
 29: QUAIS AS DUAS MANEIRAS DE ACESSAR UM ATRIBUTO DE CLASSE?
-
+<Class>.<atributo> self.atributo
 
 30: ESCREVA UMA CLASSE COM ATRIBUTO DE ESCOPO DE CLASSE
+class Bola:
+    ano = 2022
+    def __init__(self,nome=None):
+        self.nome = nome
 
+    def printar(self):
+        print(f'O atributo de classe pelo nome da classe: {Bola.ano}\nO atributo de classe pelo self: {self.ano}')
 
 33333333333333
 ---------------------------------------------------------------------------------------------
 44444444444444
 
 31: O QUE É O __DICT__?
-
+funciona como um dicionario dos dados da instancia, ele guarda os atributos da instancia
 
 32: COMO DELETAR UM DADO ATRIBUTO DE UMA CLASSE?
-
+del <instancia>.atributo
 
 33: ONDE OS ATRIBUTOS DA CLASSE SÃO SALVOS?
-
+__dict__
 
 34: QUAL A FUNÇÃO A QUE CONSEGUIMOS VER O __DICT__?
-
+vars(<instancia>)
 
 35: O __DICT__ É EDITAVEL? CONSTRUA UMA CLASSE!
+class Caminhao:
+    def __init__(self,nome=None):
+        self.nome = nome
 
+caminhao = Caminhao('Truckado')
+caminhao.__dict__[0] = 'Jose'
 
 36: CRIE UM DICIONARIO DE DADOS E DESEMPACOTE EM UMA CLASSE
+class Prancha:
+    def __init__(self,modelo=None,tamanho=None):
+        self.modelo = modelo
+        self.tamanho = tamanho
 
+dict_prancha = {'modelo':'haya', 'tamanho':'grande'}
+prancha1 = Prancha('difdoif','pequeno')
+prancha2 = Prancha(**dict_prancha)
 
 37: PARA QUE SERVE O **KWARGS DO PYTHON?
-
+para empacotar os dados da função em dicionario
 
 38: CONSTRUA UMA CLASSE COM PROPRIEDADES E DEPOIS TENHA UM DICIONARIO DE DADOS E DESEMPACOTE ELES
 
@@ -130,13 +197,24 @@ SESSION 5
 ---------------------------------------------
 55555555555555
 39: QUAL CONVENÇÃO DE NOME É UTILIZADA PARA CLASSE NO PYTHON?
-
+Pascal case
 
 40: QUAL CONVENÇÃO DE NOME É UTILIZADA PARA NOMES NO PYTHON?
-
+snake case
  
 41: CRIE UMA CLASSE PESSOA COM PROPRIEDADES DE NOME E SOBRENOME E SALVE OS DADOS DA CLASSE EM JSON
+class Pessoa:
+    def __init__(self, nome=None, sobrenome=None):
+        self.nome = nome
+        self.sobrenome = sobrenome
 
+path = 'work/pythonclub/f5_POO/json/dead_file.json'
+pessoa1 = Pessoa('Jose', 'Silva')
+pessoa2 = Pessoa('Brasil','Dosd')
+lista = [vars(pessoa1),vars(pessoa2)]
+
+with open(path,'w') as arq:
+    json.dump(lista,arq,indent=2)
 
 42: IMPORTE O MODULO CRIADO NO PYTHON PARA TER O CAMINHO DO ARQUIVO E FAÇA A LEITURA DELE
 
@@ -145,60 +223,103 @@ SESSION 5
 
 
 44: COMO ADIAR A EXECUÇÃO DE ALGO NO ARQUIVO PYTHON?
-
+incluindo em metodo
 
 45: QUAL É NOME DO MODULO QUANDO EXECUTAMOS DIRETAMENTE?
-
+__main__
 
 46: COMO DESCOBRIR O NOME DO MODULO?
-
+print(__name__)
 
 47: ESCREVA UMA CLASSE QUE SÓ EXECUTE O METODO DENTRO DELA SE O MODULO FOR ELE MESMO
+class Caminhao:
+    def __init__(self,nome=None):
+        self.nome = nome
 
+    def exec(self):
+        if __name__ == '__main__'
+        print('é o main')
 
 48: PARA FAZER UM METODO DE CLASSE O QUE É NECESSARIO?
-
+o decorator classmethod
 
 49: CONSTRUA UMA CLASSE PESSOA COM ATRIBUTO E METODO DE CLASSE:
+class Bola:
+    ano = 2023
+    def __init__(self,nome=None):
+        self.nome = nome
 
+    @staticmethod
+    def metodo_de_classe(param):
+        print(param)
 
 50: O QUE É O DECORATOR @STATICMETHOD?
-
+ele faz o metodo se comportar como uma função, sem acesso ao cls ou ao self
 
 51: O QUE É O METHOD?
-
+é o metodo de instancia com acesso ao self
 
 52: CONSTRUA UMA CLASSE COM STATICMETHOD E UTILIZE O ARGS E KWARGS NESSE METODO
+class Pneu:
+    def __init__(self,marca=None):
+        self.marca = marca
 
+    @staticmethod
+    def staticmethod(*args,**kwargs):
+        print(args,kwargs)
+
+    
 55555555555555
 -------------------------------------------------------------------------------------------------------------------------
 66666666666666
 
 53: O QUE O INIT FAZ E ELE É UMA METODO DE QUE?
-
+ele é um construtor, é metodo de instancia, responsavel por inicializar as variaveis
 
 54: O QUE É PROPERTY NO PYTHON?
-
+faz um metodo se comportar como um propriedade, responsavel pelo getter and setter
 
 55: QUAIS AS PRINCIPAIS SITUAÇÕES QUE É UTILIZADA O PROPERTY?
-
+para o getter e setter, codigo cliente, organização do codigo
 
 56: O QUE É CODIGO CLIENTE?
-
+é código que usa o seu codigo
 
 57: ESCREVA UM METODO DENTRO DE UMA CLASSE QUE SE COMPORTE COMO UMA PROPRIEDADE
+class Bola:
+    def __init__(self,tamanho=None):
+        self.tamanho = tamanho
 
+    @property
+    def tamanho(self):
+        return self._tamanho
+
+    @tamanho.setter
+    def tamanho(self,param):
+        self._tamanho = param
 
 58: QUAL A FUNÇÃO GERAL DE UM MÉTODO?
-
+executar ações, executar comportamentos
 
 59: PARA ESCREVER UM SETTER NO MODO PYTHONICO O QUE É NECESSARIO?
-
+o decorator @property
  
 60: QUANDO TEMOS UM UNDERLINE NA PROPRIEDADE OU NO METODO, O QUE SIGNIFICA?
-
+que esse metodo ou propriedade nao deve ser usado, ele é privado, usado apenas para classes e subclasses
 
 61: ESCREVA UMA CLASSE COM GETTER AND SETTER ONDE A PROPRIEDADE SÓ POSSA SER MUDADA PELO SETTER, NÃO PELO INIT
+class Caneta:
+    def __init__(self,tamanho):
+        self.tamanho = tamanho
+
+    @property
+    def tamanho(self):
+        return self._tamanho
+
+    @tamanho.setter
+    def tamanho(self, param):
+        self._tamanho = param
+
 
 66666666666666
 -------------------------------------------------------------------------------------------------------------------------
@@ -315,37 +436,53 @@ SESSION 5
 
 
 98: QUAL É O EMPACOTADOR DE ARGUMENTOS NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM DICIONÁRIO?
-
+**kwargs
 
 99: O QUE É GARBET COLLECTOR?
 
 
 100: QUAL A DIFERENÇA DA COMPOSIÇÃO PARA AGREGAÇÃO?
-
+a composição é uma especialização da agregação, onde na agregação um objeto conhece outro objeto, na composição um objeto tem outro objeto
 
 101: MOSTRE A HIERARQUIA DA COMPOSIÇÃO, ASSOCIAÇÃO, AGREGAÇÃO
-
+associação dois objetos se conhecem > agregação > composição
 
 102: O QUE É A COMPOSIÇÃO EM RELAÇÃO A AGREGAÇÃO?
-
+é uma especialização da agregação
 
 103: ESCREVA UMA CLASSE COM COMPOSIÇÃO ENTRE A CLASSE CLIENTE E ENDERECO, A CLASSE CLIENTE TEM AS PROPRIEDADES: NOME E ENDERECO, A CLASSE ENDERECO TEM AS PROPRIEDADES: RUA E NUMERO. FAÇA UMA COMPOSIÇÃO PELO MÉTODO INSERIR_ENDERECO, E MOSTRE O FUNCIONAMENTO COM OUTRO METODO INSERINDO DE FORMA EXTERNA INSERIR_ENDERECO_EXTERNO. COLOQUE O METODO __DEL__ PARA MOSTRAR O GARBET COLLECTOR E PRINT NO FINAL O ENDERECO CRIADO EXTERNO, DEPOIS AQUI TERMINA O CODIGO
+class Client:
+    def __init__(self,nome=None):
+        self.nome = nome
+        self.endereco = []
+
+    def inserir(self,**kwargs):
+        self.endereco.append(Address(**kwargs))
+
+    def listar(self):
+       [print(f'Rua: {i.rua}\nNumero: {i.numero} ') for i in self.endereco]
+    
+class Address:
+    def __init__(self, rua=None, numero=None):
+        self.rua = rua
+        self.numero = numero
+
 
 
 104: EXERCÍCIO COM CLASSES 1 - CRIE UMA CLASSE CARRO (NOME), 2 - CRIE UMA CLASSE MOTOR (NOME), 3 - CRIE UMA CLASSE FABRICANTE (NOME), 4 - FAÇA A LIGAÇÃO ENTRE CARRO TEM UM MOTOR. OBS.: UM MOTOR PODE SER DE VÁRIOS CARROS, 5 - FAÇA A LIGAÇÃO ENTRE CARRO E UM FABRICANTE . OBS.: UM FABRICANTE PODE FABRICAR VÁRIOS CARROS EXIBA O NOME DO CARRO, MOTOR E FABRICANTE NA TELA
 
 
 105: QUAIS SÃO OS PILARES DA POO?
-
+herança, poliformismo, encapsulamento, abastração
 
 106: QUAL A MANEIRA SIMPLES DE DESCREVER A RELAÇÃO DE OBJETOS NA ASSOCIAÇÃO, AGREGAÇÃO, COMPOSIÇÃO
-
+ass
 
 107: QUAL É A RELAÇÃO DE OBJETOS NA HERANÇA?
-
+é objeto
 
 108: QUANDO A GENTE FALA EM HERANÇA O QUE COMUM DIZER?
-
+que um objeto herda outro objeto, que uma classe extende outra classe
 
 109: POR QUE A GENTE UTILIZA HERANÇA?
 
