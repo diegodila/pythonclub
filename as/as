@@ -436,53 +436,37 @@ class Caneta:
 
 
 98: QUAL É O EMPACOTADOR DE ARGUMENTOS NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM DICIONÁRIO?
-**kwargs
+
 
 99: O QUE É GARBET COLLECTOR?
 
 
 100: QUAL A DIFERENÇA DA COMPOSIÇÃO PARA AGREGAÇÃO?
-a composição é uma especialização da agregação, onde na agregação um objeto conhece outro objeto, na composição um objeto tem outro objeto
+
 
 101: MOSTRE A HIERARQUIA DA COMPOSIÇÃO, ASSOCIAÇÃO, AGREGAÇÃO
-associação dois objetos se conhecem > agregação > composição
+
 
 102: O QUE É A COMPOSIÇÃO EM RELAÇÃO A AGREGAÇÃO?
-é uma especialização da agregação
+
 
 103: ESCREVA UMA CLASSE COM COMPOSIÇÃO ENTRE A CLASSE CLIENTE E ENDERECO, A CLASSE CLIENTE TEM AS PROPRIEDADES: NOME E ENDERECO, A CLASSE ENDERECO TEM AS PROPRIEDADES: RUA E NUMERO. FAÇA UMA COMPOSIÇÃO PELO MÉTODO INSERIR_ENDERECO, E MOSTRE O FUNCIONAMENTO COM OUTRO METODO INSERINDO DE FORMA EXTERNA INSERIR_ENDERECO_EXTERNO. COLOQUE O METODO __DEL__ PARA MOSTRAR O GARBET COLLECTOR E PRINT NO FINAL O ENDERECO CRIADO EXTERNO, DEPOIS AQUI TERMINA O CODIGO
-class Client:
-    def __init__(self,nome=None):
-        self.nome = nome
-        self.endereco = []
-
-    def inserir(self,**kwargs):
-        self.endereco.append(Address(**kwargs))
-
-    def listar(self):
-       [print(f'Rua: {i.rua}\nNumero: {i.numero} ') for i in self.endereco]
-    
-class Address:
-    def __init__(self, rua=None, numero=None):
-        self.rua = rua
-        self.numero = numero
-
 
 
 104: EXERCÍCIO COM CLASSES 1 - CRIE UMA CLASSE CARRO (NOME), 2 - CRIE UMA CLASSE MOTOR (NOME), 3 - CRIE UMA CLASSE FABRICANTE (NOME), 4 - FAÇA A LIGAÇÃO ENTRE CARRO TEM UM MOTOR. OBS.: UM MOTOR PODE SER DE VÁRIOS CARROS, 5 - FAÇA A LIGAÇÃO ENTRE CARRO E UM FABRICANTE . OBS.: UM FABRICANTE PODE FABRICAR VÁRIOS CARROS EXIBA O NOME DO CARRO, MOTOR E FABRICANTE NA TELA
 
 
 105: QUAIS SÃO OS PILARES DA POO?
-herança, poliformismo, encapsulamento, abastração
+
 
 106: QUAL A MANEIRA SIMPLES DE DESCREVER A RELAÇÃO DE OBJETOS NA ASSOCIAÇÃO, AGREGAÇÃO, COMPOSIÇÃO
-ass
+
 
 107: QUAL É A RELAÇÃO DE OBJETOS NA HERANÇA?
-é objeto
+
 
 108: QUANDO A GENTE FALA EM HERANÇA O QUE COMUM DIZER?
-que um objeto herda outro objeto, que uma classe extende outra classe
+
 
 109: POR QUE A GENTE UTILIZA HERANÇA?
 
