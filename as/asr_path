@@ -1,0 +1,65 @@
+1: Como pegar o caminho relativo do projeto com a classe Path()?
+from pathlib import Path
+caminho_pasta = Path()
+
+2: Como pegar o caminho absoluto do projeto com a classe Path()?
+from pathlib import Path
+caminho_pasta = Path()
+caminho_pasta.absolute()
+
+3: Como pegar o caminho absoluto do arquivo com a classe Path()?
+from pathlib import Path
+caminho_file_absolute = Path(__file__)
+
+4: Como pegar o caminho absoluto do arquivo pai com a classe Path()?
+path_file = Path(__file__)
+print(path_file.parent)
+
+5: Como pegar o parent do parent do arquivo? 
+path_file = Path(__file__)
+print(path_file.parent.parent)
+
+6: Como adicionar um novo arquivo/caminho para o parent do arquivo?
+path_arquivo = Path(__file__)
+path_novo = path_arquivo.parent / 'ideias'
+print(path_novo)
+
+7: Como pegar a home do sistema com a classe Path?
+Path.home()
+
+8: Como adicionar 'Desktop' a home do sistema?
+print(Path.home / 'Desktop')
+
+9: Como criar um arquivo dentro da home do sistema chamado 'Desk/file_test.txt'
+file = Path.home() / 'Desk' / 'file.txt'
+file.touch()
+
+10: Como apagar o arquivo criado na home chamado 'Desk/file_test.txt'
+file = Path.home() / 'Desk'
+file.unlink()
+
+11: Como escrever no arquivo com a class Path()?
+arquivo = Path.home() / 'arquivo.txt'
+arquivo.write_text('hello world')
+
+12:Como ler um arquivo criado chamado files.txt na pasta 'work/pythonclub/'
+path_to = Path.home() / 'work/pythonclub/files.txt'
+path_to.write_text('hello world')
+path_to.read_text()
+
+13: Com adicionar novas linhas no arquivo criado, sem apagar o que ja está lá?
+path_to = Path.home() / 'work/pythonclub/file.txt'
+path_to.touch()
+path_to.write_text('')
+with path_to.open('a+') as file:
+    file.write('Uma linha\n')
+    file.write('\nduas linhas')
+
+path_to.read_text()
+
+14: Como criar uma pasta atraves da class Path()?
+path_to = Path.home() / 'work/pythonclub/folder_across_pathlib'
+path_to.mkdir(exist_ok=True)
+
+
+
