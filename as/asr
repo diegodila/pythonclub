@@ -817,19 +817,19 @@ class C(B):
         B.metodo(self)
         print('C')
 
-125: Qual é o conceito de herança simples?
+125: QUAL É O CONCEITO DE HERANÇA SIMPLES?
 geralmente é uma familia de alguma coisa, generalizando as classes ou deixando mais especificas ex: Animal -> Mamifero -> Pessoa -> Cliente
 
-126: Qual é o conceito de herança multipla?
+126: QUAL É O CONCEITO DE HERANÇA MULTIPLA?
 as classes podem herdar de mais uma classe
 
-127: Qual é o padrão que pode ser usado na herança multipla?
+127: QUAL É O PADRÃO QUE PODE SER USADO NA HERANÇA MULTIPLA?
 mixins
 
-128: O que é mixins em herança?
+128: O QUE É MIXINS EM HERANÇA?
 é uma classe que nao faz parte daquela familia
 
-129: Qual é o problema do diamante, mostre na classes(a,b,c,d):
+129: QUAL É O PROBLEMA DO DIAMANTE, MOSTRE NA CLASSES(A,B,C,D):
 D(B,C) - C(A) - B(A) - A 
 
           A
@@ -838,10 +838,10 @@ D(B,C) - C(A) - B(A) - A
         \   /
           D
 
-130: O que é C3 superclass linearization na versão 3.2 e acima?
+130: O QUE É C3 SUPERCLASS LINEARIZATION NA VERSÃO 3.2 E ACIMA?
 é o algoritmo que utilizado para gerar o mro, method resolution order
 
-131: Construa o problema do diamante usando herança multipla com as classes (A, B, C, D)
+131: CONSTRUA O PROBLEMA DO DIAMANTE USANDO HERANÇA MULTIPLA COM AS CLASSES (A, B, C, D)
 class A:
     ...
 
@@ -875,19 +875,19 @@ d.quem_sou()
 # print(D.__mro__)
 print(D.mro())
 
-132: qual é a boa prática no try exception, especificamente no exception?
+132: QUAL É A BOA PRÁTICA NO TRY EXCEPTION, ESPECIFICAMENTE NO EXCEPTION?
 informar o erro no exception
 
-133: Em python o que são exceções?
+133: EM PYTHON O QUE SÃO EXCEÇÕES?
 são classes
 
-134: Todas as classes de exceções herdam de qual classe?
+134: TODAS AS CLASSES DE EXCEÇÕES HERDAM DE QUAL CLASSE?
 Exception
 
-135: Qual é a classe que trata qualquer erro do python?
+135: QUAL É A CLASSE QUE TRATA QUALQUER ERRO DO PYTHON?
 Exception
 
-136: Escreva um try except onde no try tenha um erro de divisão e trate especificamente esse erro, printando que dividiu por zero:
+136: ESCREVA UM TRY EXCEPT ONDE NO TRY TENHA UM ERRO DE DIVISÃO E TRATE ESPECIFICAMENTE ESSE ERRO, PRINTANDO QUE DIVIDIU POR ZERO:
 try:
     a = 18
     b = 0
@@ -895,7 +895,7 @@ try:
 except ZeroDivisionError:
     print('Dividiu por zero')
 
-137: Escreva um try except onde qualquer error seja tratado com print 'Cai no exception'
+137: ESCREVA UM TRY EXCEPT ONDE QUALQUER ERROR SEJA TRATADO COM PRINT 'CAI NO EXCEPTION'
 try:
     a = 18
     b = 0
@@ -903,7 +903,7 @@ try:
 except Exception:
     print('Dividiu por zero')
 
-138: Escreva um try except onde eu consiga tratar 2 erros ao mesmo tempo, erro de tipo e erro de index
+138: ESCREVA UM TRY EXCEPT ONDE EU CONSIGA TRATAR 2 ERROS AO MESMO TEMPO, ERRO DE TIPO E ERRO DE INDEX
 try:
     a = 18
     b = 0
@@ -911,7 +911,7 @@ try:
 except (IndexError, TypeError):
     print('Index e Type error')
 
-139: Escreva um try except onde eu consiga tratar 2 erros ao mesmo tempo, erro de tipo e erro de index, e print a instancia do erro e o nome da classe do erro
+139: ESCREVA UM TRY EXCEPT ONDE EU CONSIGA TRATAR 2 ERROS AO MESMO TEMPO, ERRO DE TIPO E ERRO DE INDEX, E PRINT A INSTANCIA DO ERRO E O NOME DA CLASSE DO ERRO
 try:
     a = 18
     b = 0
