@@ -28,11 +28,6 @@ não, ele é interpretado pelo python, o comentario não é
 10: COMO FUNCIONA O COMENTARIO NO INTERPRETADOR PYTHON?
 ele ignora a partir da cerquilha
 
-
--------------------------------------------------------------
-Session 5
-11111111111111
-
 11: QUAL É UMA DAS PRIMEIRAS COISAS QUE É EXECUTADO QUANDO VOCE CHAMA A CLASSE?
 __init__
 
@@ -81,9 +76,6 @@ p.acelerar()
 21: O NOME SELF É UMA CONVENÇÃO?
 sim
 
-11111111111111
----------------------------------------------------------------------------------------
-22222222222222
 22: UMA CLASSE PODE GERAR QUANTAS INSTANCIAS?
 infinitas
 
@@ -125,9 +117,6 @@ class test:
 p = test('diego')
 print(p.ace())
 
-22222222222222
--------------------------------------------------------------------------------------------------------------------
-33333333333333
 28: ESCREVA UM CLASSE CAMERA PARA MANTER O ESTADOS (FILMAR, FOTOGRAFAR, PARA_DE_FILMAR) DENTRO DELA. REQUISITO DE QUANDO ESTIVER FILMANDO NÃO PODE FOTOGRAFAR
 
 class Camera:
