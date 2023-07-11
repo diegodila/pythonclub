@@ -102,7 +102,7 @@ print(p.nome)
 namespaces
 
 27: COMO DEFINIR ATRIBUTO DE CLASSE E ATRIBUTO DE INSTANCIA E COMO RETORNAR UM METODO DA CLASSE EM OUTRO METODO?
-class test:
+class Test:
     variavel = 'diego'
 
     def __init__(self,nome):
