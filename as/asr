@@ -319,12 +319,8 @@ class Pessoa:
 Pessoa.ace(1,2,4)
 Pessoa.ace(dd=2,sdds=4)
 
-55555555555555
--------------------------------------------------------------------------------------------------------------------------
-66666666666666
-
 53: O QUE O INIT FAZ E ELE É UMA METODO DE QUE?
-ele é uma metodo da instancia, que inicia o valores(dados) da instancia
+ele é um metodo da instancia, que inicia o valores(dados) da instancia
 
 54: O QUE É PROPERTY NO PYTHON?
 é metodo que se comporta como uma propriedade do objeto, ela faz o método se comportar como atributo/propriedade
