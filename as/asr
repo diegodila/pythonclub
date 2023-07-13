@@ -364,10 +364,6 @@ class Caneta:
         print('passei')
         self._nome = valor
 
-66666666666666
--------------------------------------------------------------------------------------------------------------------------
-77777777777777
-
 62: NO PYTHON EU TENHO MODIFICADORES DE ACESSO?
 não
 
@@ -419,9 +415,6 @@ print(maquina_de_escrever.escrever())
 print(escritor.ferramenta.escrever())
 
 
-77777777777777
-
--------------------------------------------------------------------------
 69: O QUE É AGREGAÇÃO NA RELAÇÃO DE OBJETOS?
 é uma relação fraca que que é maior que a associação. Os objetos vivem separadamente, porém um precisa do outro, mas podem viver separadamente
 
