@@ -377,7 +377,7 @@ com um underline, não deve ser usado fora da classe, para sua classe e subclass
 com dois underlines no python, somente para a sua classe, nem para classe filha (subclasses)
 
 66: O QUE É NAME MANGLING?
-desfiguração de nomes, so deve ser usado na classe em que foi declarado
+desfiguração de nomes, em POO so deve ser usado na classe em que foi declarado
 
 67: O QUE É ASSOCIAÇÃO EM OBJETOS PYTHON?
 quando um objeto conhece o outro em uma relação fraca
@@ -464,7 +464,7 @@ print(carrinho.total())
 74: O QUE É COMPOSIÇÃO EM ORIENTAÇÃO A OBJETOS?
 é uma especialização da agregação, mas quando o objeto pai for apagado, todas as referencias dos objetos filhos também são apagadas
 
-75: A RELAÇÕES EM ORIENTAÇÃO A OBJETOS PRECISAM TER COMPOSIÇÃO?
+75: AS RELAÇÕES EM ORIENTAÇÃO A OBJETOS PRECISAM TER COMPOSIÇÃO?
 nenhuma relação precisa ter composição
 
 76: DESEMPACOTE UMA LISTA DE NOMES EM 3 VARIAVEIS
