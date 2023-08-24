@@ -413,16 +413,44 @@
 
 139: ESCREVA UM TRY EXCEPT ONDE EU CONSIGA TRATAR 2 ERROS AO MESMO TEMPO, ERRO DE TIPO E ERRO DE INDEX, E PRINT A INSTANCIA DO ERRO E O NOME DA CLASSE DO ERRO
 
-592.1: Escreva uma função python com asserções de erro. A função é uma soma de dois valores, com 2 parametros, onde o primeiro valor tem que ser float ou int, coloque em asserções. 
+
+591.1: Escreva uma função python com asserções de erro. A função é uma soma de dois valores, com 2 parametros, onde o primeiro valor tem que ser float ou int, coloque em asserções. 
 
 
-592.2: As asserções podem ser usadas para o usuário final?
+591.2: As asserções podem ser usadas para o usuário final?
 
 
-592.3: Como desativar as assertions? 
+591.3: Como desativar as assertions? 
 
 
-593.1: Escreva um doctest em uma função. A função é a soma de dois numeros, recebendo 2 parametros
+592.1: Escreva um doctest em uma função. A função é a soma de dois numeros, recebendo 2 parametros
 
 
-593.2: Escreva um doctest em uma função, onde voce permita o erro passar. A função é a soma de dois numeros, recebendo 2 parametros, passe o primeiro parametro como string na docstest
+592.2: Escreva um doctest em uma função, onde voce permita o erro passar. A função é a soma de dois numeros, recebendo 2 parametros, passe o primeiro parametro como string na docstest
+
+593.1: Qual classe que herdamos quando usamos o unittest:
+
+593.2: Quando estou escrevendo os testes dentro da classe, com qual palavra deve iniciar os nomes:
+test
+
+593.3: Quando estou colocando os nomes dos testes qual é a boa prática pra expor o que está fazendo?
+colocar nomes longos e descritivos
+
+593.3:
+593.3: 
+593.3: 
+593.3:
+593.3: 
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3:
+593.3: 
