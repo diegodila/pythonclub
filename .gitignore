@@ -154,4 +154,4 @@ cython_debug/
 
 githubapi/repositories
 
-requirements
+requirements.txt
