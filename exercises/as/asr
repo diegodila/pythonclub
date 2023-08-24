@@ -900,3 +900,53 @@ except (IndexError, TypeError) as error:
     print('Nome:',error.__class__.__name__)
 
 140:
+
+
+#592.1
+from work.pythonclub.f14_TDD import calculator
+try:
+    calculator.calculator('s',3)
+except AssertionError as e:
+    print('erro->',e)
+
+#592.2
+não,ele deve ser usado para outros desenvolvedores
+
+#592.3
+passando a flag -O
+
+#593.1
+def soma(x,y):
+        ''' Soma x e y
+        >>> soma(10,20)
+        30
+        >>> soma(-10,20)
+        10
+        '''
+        assert isinstance(x, (int,float)), 'x precisar ser int ou float'
+        assert isinstance(y, (int,float)), 'y precisar ser int ou float'
+        return x + y
+
+if __name__ == '__main__':
+        import doctest
+        doctest.testmod(verbose=True)
+
+593.2
+def soma(x,y):
+        ''' Soma x e y
+        >>> soma(10,20)
+        30
+        >>> soma(-10,20)
+        10
+        >>> soma('10', 20)
+        Traceback (most recent call last):
+        ...
+        AssertionError: x precisar ser int ou float
+        '''
+        assert isinstance(x, (int,float)), 'x precisar ser int ou float'
+        assert isinstance(y, (int,float)), 'y precisar ser int ou float'
+        return x + y
+
+if __name__ == '__main__':
+        import doctest
+        doctest.testmod(verbose=True)
