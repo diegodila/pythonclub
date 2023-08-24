@@ -902,20 +902,20 @@ except (IndexError, TypeError) as error:
 140:
 
 
-#592.1
+#591.1
 from work.pythonclub.f14_TDD import calculator
 try:
     calculator.calculator('s',3)
 except AssertionError as e:
     print('erro->',e)
 
-#592.2
+#591.2
 não,ele deve ser usado para outros desenvolvedores
 
-#592.3
+#591.3
 passando a flag -O
 
-#593.1
+#592.1
 def soma(x,y):
         ''' Soma x e y
         >>> soma(10,20)
@@ -931,7 +931,7 @@ if __name__ == '__main__':
         import doctest
         doctest.testmod(verbose=True)
 
-593.2
+592.2
 def soma(x,y):
         ''' Soma x e y
         >>> soma(10,20)
@@ -950,3 +950,16 @@ def soma(x,y):
 if __name__ == '__main__':
         import doctest
         doctest.testmod(verbose=True)
+
+#593.1
+unittest.TestCase
+
+#593.2
+test
+
+#593.3
+colocar nomes longos
+
+#593.4
+
+#593.5
