@@ -438,6 +438,10 @@
 593.3: Quando estou colocando os nomes dos testes qual é a boa prática pra expor o que está fazendo?
 
 
+593.4: Escreva um teste usando a lib unittest para função calculator no modulo calculator_unittest. Esse teste faz o calculator receber dois valores para um resultado
+
+
+594.5: Escreva um teste usando a lib unittest para função calculator no modulo calculator_unittest. Esse teste faz o calculator receber VARIOS valores para testar os resultados
 
 
 593.3:
