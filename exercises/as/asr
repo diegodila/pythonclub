@@ -1019,14 +1019,23 @@ if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False, verbosity=2)
 
 #594.1
+precisamos testar o codigo, criar o codigo, melhorar codigo
+
+#594.2
+think about what you want to develop
+
+#594.3
+think about how to make your tests pass
+
+#594.4
+think about how to improve your existing implementation
+
 #594.5
-#594.5
-#594.5
-#594.5
-#594.5
-#594.5
-#594.5
-#594.5
+tdd - test driven development
+#594.6
+#594.7
+#594.8
+#594.9
 #594.5
 #594.5
 #594.5
