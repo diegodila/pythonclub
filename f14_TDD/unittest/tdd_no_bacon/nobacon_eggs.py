@@ -12,3 +12,14 @@
 
 def nobaconeggs(n):
     assert isinstance(n, (float, int)), 'n deve ser int ou float'
+
+    if n % 3 == 0 and n % 5 == 0:
+        return 'alface com ovos'
+
+    if n % 3 == 0:
+        return 'Algas'
+
+    if n % 5 == 0:
+        return 'Ovos'
+
+    return 'Passar fome'
