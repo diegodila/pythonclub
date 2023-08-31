@@ -460,7 +460,12 @@
 
 594.5: O que é TDD?
 
-594.4: 
+594.6: Escreva um teste para a função nobaconeggs com a lib unittest no modulo unittest.tdd_no_bacon.nobacon_eggs onde esse teste faça os seguintes requisitos:
+- o nobacon deve retornar 'alface com ovos' se a entrada for multiplo de 3 e 5, entrada: multiplos de 3 e 5
+- o nobacon deve retornar 'Passar fome' se a entrada for multiplo de 3 e 5, entrada: (1, 2, 4, 7, 8)
+- o nobacon deve retornar 'Algas' se a entrada for multiplo de 3, entrada: (3, 6, 9, 12, 18, 21)
+- o nobacon deve retornar 'Ovos' se a entrada for multiplo de 5, entrada: (5, 10, 20, 25, 35)
+
 593.3:
 593.3:
 593.3:
