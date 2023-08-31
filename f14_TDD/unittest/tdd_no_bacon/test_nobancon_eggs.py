@@ -18,9 +18,9 @@ class TestNOBaconEggs(unittest.TestCase):
         with self.assertRaises(AssertionError):
             nobaconeggs('')
             
-    def test_bacon_com_ovos_deve_retornar_bacon_com_ovos_se_entrada_for_multiplo_de_3_e_5(self):
+    def test_bacon_com_ovos_deve_retornar_alface_com_ovos_se_entrada_for_multiplo_de_3_e_5(self):
         entradas = (15, 30, 45, 60)
-        saida = 'Bacon com ovos'
+        saida = 'alface com ovos'
 
         for entrada in entradas:
             with self.subTest(entrada=entrada, saida=saida):
@@ -42,7 +42,7 @@ class TestNOBaconEggs(unittest.TestCase):
                     msg=f'"{entrada}" não retornou "{saida}"'
                 )
 
-    def test_bacon_com_ovos_deve_retornar_bacon_se_entrada_for_multiplo_de_3(self):
+    def test_bacon_com_ovos_deve_retornar_algas_se_entrada_for_multiplo_de_3(self):
         entradas = (3, 6, 9, 12, 18, 21)
         saida = 'Bacon'
 
