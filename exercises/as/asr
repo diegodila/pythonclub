@@ -621,7 +621,7 @@ print('######################## AQUI TERMINA MEU CÓDIGO')
 104: EXERCÍCIO COM CLASSES 1 - CRIE UMA CLASSE CARRO (NOME), 2 - CRIE UMA CLASSE MOTOR (NOME), 3 - CRIE UMA CLASSE FABRICANTE (NOME), 4 - FAÇA A LIGAÇÃO ENTRE CARRO TEM UM MOTOR. OBS.: UM MOTOR PODE SER DE VÁRIOS CARROS, 5 - FAÇA A LIGAÇÃO ENTRE CARRO E UM FABRICANTE . OBS.: UM FABRICANTE PODE FABRICAR VÁRIOS CARROS EXIBA O NOME DO CARRO, MOTOR E FABRICANTE NA TELA
 
 105: QUAIS SÃO OS PILARES DA POO?
-abastração, poliformismo, encapsulamento e herança
+abstração, poliformismo, encapsulamento e herança
 
 106: QUAL A MANEIRA SIMPLES DE DESCREVER A RELAÇÃO DE OBJETOS NA ASSOCIAÇÃO, AGREGAÇÃO, COMPOSIÇÃO
 associação usa, agregação tem, composição é dono de
@@ -645,7 +645,7 @@ super class, base class, parent class
 sub class, child class, derived class
 
 113: TODAS AS CLASSES HERDAM O QUE?
-herdam do builtins o object, fazendo automticamete a herança do seu objeto do object
+herdam do builtins o object, fazendo automaticamete a herança do seu objeto do object
 
 114: CRIE UMA HERANÇA SIMPLES ONDE CLIENTE EXTENDE DE PESSOA
 class Pessoa:
@@ -678,7 +678,7 @@ a = Aluno('José','X')
 c.nome_da_classe()
 a.nome_da_classe()
 
-116: O QUE ACONTECE QUANDO TEMOS O MESMO METODO OU ATRIBUTO NA CLASS FILHA E CLASSE PAI, PELO METHOD RESOLUTION ORDER?
+116: O QUE ACONTECE QUANDO TEMOS O MESMO METODO OU ATRIBUTO NA CLASSE FILHA E CLASSE PAI, PELO METHOD RESOLUTION ORDER?
 o method resolution order busca o metodo ou atributo por hierarquia, quando encontra na classe filha e ele executa a classe filha 
 
 117: PARA EVITAR A COMPLEXIDADE DE HERANÇA, QUAL É O IDEAL DE NÍVEIS DE OBJETOS?
@@ -793,7 +793,7 @@ class C(B):
         # super(A, self).metodo()  # object
         A.metodo(self)
         B.metodo(self)
-        print('C')
+        print('C')[]
 
 125: QUAL É O CONCEITO DE HERANÇA SIMPLES?
 geralmente é uma familia de alguma coisa, generalizando as classes ou deixando mais especificas ex: Animal -> Mamifero -> Pessoa -> Cliente
