@@ -558,6 +558,14 @@ def desempacotar_tupla_como_nao_nomeado(*args, **kwargs):
     
 desempacotar_tupla_como_nao_nomeado(*tupla)
 
+96.1: Build a function with parameters d, *args, *kwargs and unpack this tuple: c = 3 , tup = (c,1,3,4,5) where d will be distributed in the first parameter d. This function shows how named arguments work
+def fucn(a,*args, **kwargs):
+    print(sum(args))
+    print(kwargs)
+    print(d)
+tup = (d,1,3,4,5)
+fucn(*tup)
+
 97: QUAL É O EMPACOTADOR DE ARGUMENTOS NÃO NOMEADOS DENTRO DA FUNÇÃO QUE TRANSFORMA OS ARGUMENTOS EM TUPLA?
 *args
 
