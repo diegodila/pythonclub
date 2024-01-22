@@ -652,7 +652,7 @@ super class, base class, parent class
 112: COMO CHAMAMOS AS CLASSES FILHAS NA HERANÇA?
 sub class, child class, derived class
 
-113: TODAS AS CLASSES HERDAM O QUE?
+113: TODAS AS CLASSES HERDAM O QUE DO PYTHON?
 herdam do builtins o object, fazendo automaticamete a herança do seu objeto do object
 
 114: CRIE UMA HERANÇA SIMPLES ONDE CLIENTE EXTENDE DE PESSOA
