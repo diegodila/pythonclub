@@ -1,0 +1,18 @@
+1.1 how to create data from a string
+from datetime import datetime
+date = datetime(2022,1,1)
+
+1.2 Is datetime a class or a method?
+class
+
+1.3 how to get the day from a datetime object?
+<obj>.day
+
+1.4 how to get today date in datetime?
+from datetime import datetime
+today = datetime.today()
+
+1.5 how to subtract a month, day and hours from a date?
+today - relativedelta(days=2)
+today - relativedelta(months=1)
+today - relativedelta(hours=1)
