@@ -169,7 +169,7 @@ class Pessoa:
 44444444444444
 
 31: O QUE É O __DICT__?
-é o dicionario que está dentro do objeto, ele matem um objeto do tipo mapping dentro das instancias da classes python. Ele mantem os valores que podem ser escritos dentro do objeto. Um dicionario que está dentro da instancias da classe python, é considerado um atributo que está dentro da classe, é onde os atributos da classe são salvos. Ele retem os valores do seu objeto
+é o dicionario que está dentro do objeto, ele mantem um objeto do tipo mapping dentro das instancias da classes python. Ele mantem os valores que podem ser escritos dentro do objeto. Um dicionario que está dentro da instancias da classe python, é considerado um atributo que está dentro da classe, é onde os atributos da classe são salvos. Ele retem os valores do seu objeto
 
 32: COMO DELETAR UM DADO ATRIBUTO DE UMA CLASSE?
 del <instancia_classe>.<atributo_classe>
