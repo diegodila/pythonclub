@@ -1,0 +1,10 @@
+services:
+  web:
+    image: python:latest
+    working_dir: /app
+    ports:
+      - "3002:3002"
+    volumes:
+      - ".:/app" 
+    restart: unless-stopped
+    command: python -m http.server -d . 3002

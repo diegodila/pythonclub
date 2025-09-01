@@ -469,7 +469,64 @@
 - o nobacon deve retornar 'Algas' se a entrada for multiplo de 3, entrada: (3, 6, 9, 12, 18, 21)
 - o nobacon deve retornar 'Ovos' se a entrada for multiplo de 5, entrada: (5, 10, 20, 25, 35)
 
-593.3:
+601.1: Escreva uma função simples de soma, porem tenha testes simples de execução dessa função, esses testes so poderao executar se essa funcao nao for importada
+def soma(x:float, y:float) -> float:
+    return x + y
+
+if __name__ == '__main__':
+    print(soma(10,20))
+
+
+601.2 como ver quais argumentos estao sendo passados em script python 
+import sys
+print(sys.argv )
+
+601.3 com ver a quantidade de argumentos passados?
+import sys 
+quantidade = len(sys.argv)
+print(quantidade)
+
+601.4 em metodos HTTP quando escrevemos o que enviamos?
+o body
+
+601.5 qual é a forma de forma acessar os recursos de uma pagina
+tudo que vem a partir da barra é um recurso da raiz do site
+
+601.6 por onde é passamos a informacoes de login via http? 
+via header
+
+601.7 quando estamos uma mensagem ao servidor o que é comum passar também 
+o body 
+
+601.8 qual a mensagem de resposta mais comum ou status code do server?
+200 de success
+
+601.9 uma porta de maquina pode ser usada por quantos servicos?
+apenas 1 
+
+601.10 como iniciar uma servidor http na linha de comando python?
+python -m http.server -d . 3002
+
+601.11 o que é o requests no python?
+é um modulo 
+
+601.12 se um site esta rodando em http, qual a porta padrao?
+80
+
+601.13 se um site esta rodando em https, qual a porta padrao?
+443
+
+601.14 como pegar com requests do python o status code na resposta?
+import requests
+response = requests.get({url_passar}).status_code 
+
+601.15 como pegar com requests do python o response headers na resposta?
+response = requests.get({url_passar}).header 
+
+601.16 como pegar com requests do python o response content na resposta?
+response = requests.get({url_passar}).text 
+
+
 593.3:
 593.3:
 593.3:
