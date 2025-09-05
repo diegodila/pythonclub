@@ -1,1 +1,4 @@
+
+#executa o modulo python e cria um http server para voce com a porta mecionada 
+command: python -m http.server -d . 3002
 docker-compose --build 

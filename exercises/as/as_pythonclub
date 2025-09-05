@@ -526,6 +526,111 @@ response = requests.get({url_passar}).header
 601.16 como pegar com requests do python o response content na resposta?
 response = requests.get({url_passar}).text 
 
+602.1 o que significa rest?
+transf representacional de estado
+
+602.2 o que uma api faz no fim das contas?
+ele faz uma interface de comunicação utilizando o protocolo http
+
+602.3 para criar bons endpoints o que precisamos saber?
+o que é substantivo e verbo
+
+602.4 o que é um resource em api rest?
+um elemento
+
+602.5 cada model é um resource?
+sim
+
+602.6 de um exemplo de uma uri endpoint?
+http://www.meusistem.com.br/api/v1/produtos
+
+602.7 os endpoints normalmente sao nomeados com substantivos ou verbos?
+substantivos
+
+602.8 os endpoints represetam como os registros
+como colecoes ou individual
+
+602.9 mostre um design ruim de idetificador de api?
+http://www.meusite.com.br/api/v1/42/produtos (recurso é um numero) e o identificador é um substantivo
+
+602.10 geralmente o substantivo de um recurso é no plural ou no sigular?
+plural  
+
+602.10 em api restful o significam os verbos?
+indicam uma ação que queremos realizar ao nosso recurso
+
+602.11 o verbo get do http serve para acessar?
+uma coleção de um recurso ou um recurso individual
+
+602.12 o verbo post do http serve para acessar?
+recurso de uma coleção nunca individualmente
+
+602.13 o metodo put (verbo) do http?
+para atualizar um recurso individual
+
+602.14 o metodo delete (verbo) do http?
+para deletar um recurso individual 
+
+602.15 tudo que esta apos o endpoint com ? é chamado de?
+question mark - conjuntos de pares chave valor
+
+602.16 para que sao usadas as questions mark?
+para alterar os dados de acordo com estes parametros
+
+602.17 como sao chamados os tipos de requisicoes (requests) com question mark?
+sao chamadas de query string
+
+602.18 como separamos os pares chave/valor nas queries strings?
+com & api/v1/produtos?order=desc&limit=10
+
+602.19 temos headers na request e na response?
+sim 
+
+602.20 o que enviamos em uma response?
+dados
+
+602.21 em uma response o content type deve bater com o que da request?
+com a accept espeficada no header
+
+602.22 quais sao os grupos de http do 1xx ao 5xx?
+1xx informational
+2xx success
+3xx redirection
+4xx client error
+5xx server error
+
+603.1 ao executar um programa python o que ocorre?
+o interpretador python cria um processo no sistema operacional
+
+603.2 criado um processo python o que ocorre?
+cria uma thread (linha de execução) para executar o codigo
+
+
+603.3 em ciencia da computacao o que concorrencia
+é a execucao de multiplas instrucoes sequenciais ao mesmo tempo
+
+603.4 quais os 2 tipos principais de concorrencia?
+programacao parelela e programacao assincrona
+
+603.5 em tarefas que fazem uso excessivo de cpu, qual o melhor tipo de programacao?
+paralela
+
+603.6 de alguns exemplos de programacao que utilizam muito a cpu?
+operacoes em strings, algoritmos de busca, processamento grafico, algoritmos de processamento numerico
+
+603.7 em tarefas que fazem uso IO (input/output) qual o melhor tipo de programacao?
+assincrona
+
+
+603.8 de alguns exemplos de programacao que utilizam IO?
+leitura ou escrita em banco de dados, chamadas a web services (APIs), copia, upload ou download de dados
+
+
+
+
+
+
+
 
 593.3:
 593.3:
