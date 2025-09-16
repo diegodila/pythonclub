@@ -625,7 +625,8 @@ assincrona
 603.8 de alguns exemplos de programacao que utilizam IO?
 leitura ou escrita em banco de dados, chamadas a web services (APIs), copia, upload ou download de dados
 
-
+603.9 pergunta simples voltando ao inicio da programacao, quando atribuimos uma função que nao tem retorno a uma variavel o que acontece?
+retorna None
 
 
 
