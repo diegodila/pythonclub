@@ -628,6 +628,8 @@ leitura ou escrita em banco de dados, chamadas a web services (APIs), copia, upl
 603.9 pergunta simples voltando ao inicio da programacao, quando atribuimos uma função que nao tem retorno a uma variavel o que acontece?
 retorna None
 
+603.10 qual o papel de um função? 
+uma função sempre retorna algo, mesmo que None, sempre retorna algum valor
 
 
 
