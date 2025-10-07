@@ -629,9 +629,10 @@ leitura ou escrita em banco de dados, chamadas a web services (APIs), copia, upl
 retorna None
 
 603.10 qual o papel de um função? 
-uma função sempre retorna algo, mesmo que None, sempre retorna algum valor
+adiar a execucao de algo, uma função sempre retorna algo, mesmo que None, sempre retorna algum valor
 
-
+603.11 escreva de forma simples, uma lista com nome qualquer onde tenha 2 objetos
+lista_objetos = [ClasseDoMeuObjeto(nome='Diego'), ClasseDoMeuObjeto(nome='Diego')]
 
 
 
