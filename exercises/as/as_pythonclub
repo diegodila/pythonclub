@@ -479,7 +479,7 @@ if __name__ == '__main__':
 
 601.2 como ver quais argumentos estao sendo passados em script python 
 import sys
-print(sys.argv )
+print(sys.argv)
 
 601.3 com ver a quantidade de argumentos passados?
 import sys 

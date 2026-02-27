@@ -1,0 +1,161 @@
+1.1: Escreva uma função simples de soma, porem tenha testes simples de execução dessa função, esses testes so poderao executar se essa funcao nao for importada
+def soma(x:float, y:float) -> float:
+    return x + y
+
+if __name__ == '__main__':
+    print(soma(10,20))
+
+1.2 como ver quais argumentos estao sendo passados em script python 
+import sys
+print(sys.argv)
+
+1.3 com ver a quantidade de argumentos passados?
+import sys 
+quantidade = len(sys.argv)
+print(quantidade)
+
+1.4 em metodos HTTP quando escrevemos o que enviamos?
+o body
+
+1.5 qual é a forma de forma acessar os recursos de uma pagina
+tudo que vem a partir da barra é um recurso da raiz do site
+
+1.6 por onde é passamos a informacoes de login via http? 
+via header
+
+1.7 quando estamos uma mensagem ao servidor o que é comum passar também 
+o body 
+
+1.8 qual a mensagem de resposta mais comum ou status code do server?
+200 de success
+
+1.9 uma porta de maquina pode ser usada por quantos servicos?
+apenas 1 
+
+1.10 como iniciar uma servidor http na linha de comando python?
+python -m http.server -d . 3002
+
+1.11 o que é o requests no python?
+é um modulo 
+
+1.12 se um site esta rodando em http, qual a porta padrao?
+80
+
+1.13 se um site esta rodando em https, qual a porta padrao?
+443
+
+1.14 como pegar com requests do python o status code na resposta?
+import requests
+response = requests.get({url_passar}).status_code 
+
+1.15 como pegar com requests do python o response headers na resposta?
+response = requests.get({url_passar}).header 
+
+1.16 como pegar com requests do python o response content na resposta?
+response = requests.get({url_passar}).text 
+
+2.1 o que significa rest?
+transf representacional de estado
+
+2.2 o que uma api faz no fim das contas?
+ele faz uma interface de comunicação utilizando o protocolo http
+
+2.3 para criar bons endpoints o que precisamos saber?
+o que é substantivo e verbo
+
+2.4 o que é um resource em api rest?
+um elemento
+
+2.5 cada model é um resource?
+sim
+
+2.6 de um exemplo de uma uri endpoint?
+http://www.meusistem.com.br/api/v1/produtos
+
+2.7 os endpoints normalmente sao nomeados com substantivos ou verbos?
+substantivos
+
+2.8 os endpoints represetam como os registros
+como colecoes ou individual
+
+2.9 mostre um design ruim de idetificador de api?
+http://www.meusite.com.br/api/v1/42/produtos (recurso é um numero) e o identificador é um substantivo
+
+2.10 geralmente o substantivo de um recurso é no plural ou no sigular?
+plural  
+
+2.10 em api restful o significam os verbos?
+indicam uma ação que queremos realizar ao nosso recurso
+
+2.11 o verbo get do http serve para acessar?
+uma coleção de um recurso ou um recurso individual
+
+2.12 o verbo post do http serve para acessar?
+recurso de uma coleção nunca individualmente
+
+2.13 o metodo put (verbo) do http?
+para atualizar um recurso individual
+
+2.14 o metodo delete (verbo) do http?
+para deletar um recurso individual 
+
+2.15 tudo que esta apos o endpoint com ? é chamado de?
+question mark - conjuntos de pares chave valor
+
+2.16 para que sao usadas as questions mark?
+para alterar os dados de acordo com estes parametros
+
+2.17 como sao chamados os tipos de requisicoes (requests) com question mark?
+sao chamadas de query string
+
+2.18 como separamos os pares chave/valor nas queries strings?
+com & api/v1/produtos?order=desc&limit=10
+
+2.19 temos headers na request e na response?
+sim 
+
+2.20 o que enviamos em uma response?
+dados
+
+2.21 em uma response o content type deve bater com o que da request?
+com a accept espeficada no header
+
+2.22 quais sao os grupos de http do 1xx ao 5xx?
+1xx informational
+2xx success
+3xx redirection
+4xx client error
+5xx server error
+
+3.1 ao executar um programa python o que ocorre?
+o interpretador python cria um processo no sistema operacional
+
+3.2 criado um processo python o que ocorre?
+cria uma thread (linha de execução) para executar o codigo
+
+3.3 em ciencia da computacao o que é concorrencia
+é a execucao de multiplas instrucoes sequenciais ao mesmo tempo
+
+3.4 quais os 2 tipos principais de concorrencia?
+programacao parelela e programacao assincrona
+
+3.5 em tarefas que fazem uso excessivo de cpu, qual o melhor tipo de programacao?
+paralela
+
+3.6 de alguns exemplos de programacao que utilizam muito a cpu?
+operacoes em strings, algoritmos de busca, processamento grafico, algoritmos de processamento numerico
+
+3.7 em tarefas que fazem uso IO (input/output) qual o melhor tipo de programacao?
+assincrona
+
+3.8 de alguns exemplos de programacao que utilizam IO?
+leitura ou escrita em banco de dados, chamadas a web services (APIs), copia, upload ou download de dados
+
+3.9 pergunta simples voltando ao inicio da programacao, quando atribuimos uma função que nao tem retorno a uma variavel o que acontece?
+retorna None
+
+3.10 qual o papel de um função? 
+adiar a execucao de algo, uma função sempre retorna algo, mesmo que None, sempre retorna algum valor
+
+3.11 escreva de forma simples, uma lista com nome qualquer onde tenha 2 objetos
+lista_objetos = [ClasseDoMeuObjeto(nome='Diego'), ClasseDoMeuObjeto(nome='Diego')]
