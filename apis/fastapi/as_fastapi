@@ -14,7 +14,7 @@ import sys
 quantidade = len(sys.argv)
 print(quantidade)
 
-1.4 em metodos HTTP quando escrevemos o que enviamos?
+1.4 em metodos HTTP quando escrevemos o que vamos enviar?
 o body
 
 1.5 qual é a forma de forma acessar os recursos de uma pagina
@@ -29,7 +29,7 @@ o body
 1.8 qual a mensagem de resposta mais comum ou status code do server?
 200 de success
 
-1.9 uma porta de maquina pode ser usada por quantos servicos?
+1.9 uma porta da maquina (SO) pode ser usada por quantos servicos?
 apenas 1 
 
 1.10 como iniciar uma servidor http na linha de comando python?
