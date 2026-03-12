@@ -1,0 +1,20 @@
+onde geralmente o with é utilizado?
+para abrir arquivos e banco de dados
+
+qual o problema que o with resolve?
+quando abrimos algo, e por algum motivo tem um erro de execução no meio, nao é possivel fechar esse arquivo/conexao/thread
+
+Você usa ele normalmente
+Ao sair do bloco with, o Python fecha automaticamente, mesmo se ocorrer uma exceção
+Evita vazamento de recursos
+with = segurança + limpeza automática
+
+
+with algo:
+    # código
+    
+algo.__enter__()
+try:
+    # código
+finally:
+    algo.__exit__()
