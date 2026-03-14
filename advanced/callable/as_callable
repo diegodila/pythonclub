@@ -1,0 +1,13 @@
+1.1 o que é callable?
+em python é algo que pode ser chamado como função
+
+1.1 o que a função callable faz do python?
+verifica se aqui pode ser chamado como função
+callable(func) -> True
+
+def func(): pass
+class A: pass
+lambda x: x+1
+
+callable(func)
+
