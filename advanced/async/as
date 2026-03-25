@@ -2,19 +2,19 @@
 o interpretador cria um processo no sistema operacional
 o processo python cria uma thread (linha de execucao) para executar o codigo
 
-1.2 em ciencia de computacao o que concorrencia?
-é execucao de multiplas istucoes sequenciais ao mesmo tempo 
+1.2 em ciencia da computacao o que concorrencia?
+é execucao de multiplas istrucoes sequenciais ao mesmo tempo 
 
 1.3 quantos tipos de concorrencia existem?
 programacao assincrona, paralela e distribuida 
 
-1.4 o que acontece quando não utilizamos o tipo de programacao parela na execucao?
+1.4 o que acontece quando não utilizamos o tipo de programacao paralela na execucao?
 executamos as instrucoes de um programa por um unico core mesmo que maquina tenha varios
 
 1.5 onde o tipo de programacao paralela tem a melhor utilizacao?
-em tarefas qeu fazem o uso excessivo da cpu/gpu
+em tarefas que fazem o uso excessivo da cpu/gpu
 
-1.6 quais as tarefam que utilizam bastante processamento cpu?
+1.6 quais as tarefas que utilizam bastante processamento de cpu?
 operacoes em string; algoritmos de busca, processamento grafico, algoritmosde processamento numerico
 
 1.7 onde é utilizado o tipo de programacao assincrona?
@@ -22,7 +22,7 @@ em operacoes de leitura ou escrita em dispositivos IO - (input, output)
 que sao operacoes que pode ser lentas e dependem de um retorno de execucao, (success, failed)
 
 1.8 quais exemplos de input/output que levam a ser lentos?
-servidor offline, internet falha, consulta com a reposta demorada, a mesma coisa servidores de banco de dados
+servidor offline, internet falha, consulta com a reposta demorada, a mesma coisa servidores de banco de dados, baixar arquivos ou fazer upload de arquivos
 
 1.9 quando temos o tipo de programacao assincrona qual é forma é organizado em threads?
 aquela parte/instrucao/tarefa sai da thread principal e vai para esteira da thread secundaria, isso nao prejudica a linha de execucao(thread principal)
@@ -38,7 +38,7 @@ objetos de operacoes incompletas, promisses, futures ou task
 
 1.12 onde é melhor utilizada o tipo de programacao assincrona?
 tarefas que exigem o uso intesivo de IO, leitura e escrita em banco de dados
-chamada a web services (apis), copia, ipload ou download de dados
+chamada a web services (apis), copia, upload ou download de dados
 
 1.13 qual a limitacao do threading que foi introduzido no python 1.5?
 o GIL - Global Interpreter Lock, fazendo com que o codigo seja executado em serie e nao em paralelo
