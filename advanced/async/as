@@ -52,4 +52,13 @@ permite criar subprocessos nativos no SO ao inves do threads, podendo execturar 
 1.16 como alternar entre threading e multiprocessing no python?
 usando implementacao abstrata com o concurrent.futures 
 
-1.17
+1.17 o que é uma thread?
+é uma linha de execução, é a menor sequencia de instruções que pode ser gerenciada pelo sistema operacional
+
+1.18 o que é uma processo?
+a execução de um programa é considerado um processo, onde ele é composto por uma ou mais threads (linha de execução), um processo tem recursos e memoria (recursos)
+
+1.19 o que acontece quando a maquina/servidor dispoes de multiplos cores nas threads? 
+as multiplas threads compartilham os recursos (memoria), caso contrario ela sao executadas de forma sequencial
+
+1.20 
