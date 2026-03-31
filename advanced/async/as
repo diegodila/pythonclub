@@ -61,4 +61,15 @@ a execução de um programa é considerado um processo, onde ele é composto por
 1.19 o que acontece quando a maquina/servidor dispoes de multiplos cores nas threads? 
 as multiplas threads compartilham os recursos (memoria), caso contrario ela sao executadas de forma sequencial
 
-1.20 
+1.20 qual o funcionamento simples de um programa python em thread, o que acontece?
+é criada um thread principal para executar o programa o python e a partir disso, tudo que vem apos se torna uma filha da thread principal
+
+1.21 o que acontece quando utilizamos o methodo start() do Thread?
+é fica disponivel no pool de threads pronto para executar, nesse pool ela fica com (ready state) e sera executado de acordo a disponibilidade do processador
+
+1.22 o que acontece quando utilizamos o methodo join() do Thread?
+ela nao fica somente com status "running" mas ativa o Main Thread block, que faz com que outra coisa so seja executada apos a thread (filha) finalizar seu trabalho
+start()= new -> join()= ready -> running> blocked > terminated
+
+1.23 o que é uma agendador(scheduler)?
+sistemas operacionais possuem um modulo que seleciona as proximas tarefas a serem admitidas no sistema e desta forma o proximo processo a ser executado, ou seja quando um processo é executado, o sistema operacional utiliza um algoritimo de escalonamento de processos que organiza e gerencia os novos processos.Este algoritmo possui um agendador, chamado scheduler que controlas quando um processo ou thread ira executar e por quanto tempo 
