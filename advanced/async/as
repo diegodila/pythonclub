@@ -73,3 +73,35 @@ start()= new -> join()= ready -> running> blocked > terminated
 
 1.23 o que é uma agendador(scheduler)?
 sistemas operacionais possuem um modulo que seleciona as proximas tarefas a serem admitidas no sistema e desta forma o proximo processo a ser executado, ou seja quando um processo é executado, o sistema operacional utiliza um algoritimo de escalonamento de processos que organiza e gerencia os novos processos.Este algoritmo possui um agendador, chamado scheduler que controlas quando um processo ou thread ira executar e por quanto tempo 
+
+1.24 quando trabalhamos com multi threads o que é recomendado?
+que tentemos manter o minimo possivel de recursos compartilhados entre threads. que thread dependa de dados ou recursos que outra thread possa manipular
+
+1.25 qual o principal recurso de controle de threads?
+é o lock
+
+1.26 o que é o lock no controle de thread?
+é recurso de bloqueio, para que thread bloqueie o acesso a determinado recurso
+
+1.27 quando uma thread faz um lock quem é pode liberar o acesso (unlock)?
+apenas a propria thread
+
+1.28 em programação como uma thread adquire o lock?
+com o metodo acquire()
+
+1.29 em programação como uma thread adquire o unlock?
+com o metodo release()
+
+1.30 faça uma programa simples de instaciar uma thread, com o lock e o unlock?
+import threading
+th = threading.Thread(target=contar, args('elefante',10))
+lock = th.Lock()
+
+#Lock
+#realiza qualquer operacao com o recurso bloqueado para outra threads 
+lock.acquire()
+#unlock
+lock.release()
+
+1.31 em boas praticas é ideal utilizar o th.Lock()?
+não porque ele pode bloquear os recursos da propria thread, o ideal é utilizar o th.RLock()
