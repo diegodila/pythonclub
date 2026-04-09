@@ -105,3 +105,30 @@ lock.release()
 
 1.31 em boas praticas é ideal utilizar o th.Lock()?
 não porque ele pode bloquear os recursos da propria thread, o ideal é utilizar o th.RLock()
+
+1.32 cria 2 threads com a segunda função dependendo da primeira função utilizando Queue. A primeira função gera dados de 1 a 10 e guarda na pilha de queue. A segunda função extrai tudo que esta na pilha e faz * 2. 
+
+import time
+import colorama
+from threading import Thread
+from queue import Queue
+
+def data_generator(queue):
+    for i in range(1,11):
+        print(colorama.Fore.GREEN + f'Dados {i} gerado.', flush=True)
+        time.sleep(3)
+        queue.put(i)
+
+
+def data_consumer():
+    while queue.qsize() > 0:
+        valor = queue.get()
+        print(colorama.Fore.RED + f'Dado {valor * 2} processado.', flush=True)
+        time.sleep(2)
+        queue.task_done()
+
+if __name__ == '__main__':
+    print(colorama.Fore.WHITE + f'Sistema iniciado', flush=True)
+    queue = Queue()
+    th1 = Thread(target=data_generator, args=(queue))
+    th3 = Thread(target=data_consumer, args=(queue))
