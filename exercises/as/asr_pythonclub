@@ -224,7 +224,16 @@ pascal case
 snake case
  
 41: CRIE UMA CLASSE PESSOA COM PROPRIEDADES DE NOME E SOBRENOME E SALVE OS DADOS DA CLASSE EM JSON
- 
+class Pessoa:
+
+    def __init__(self,nome='Diego',sobrenome=''):
+        self.nome = nome
+        self.sobrenome = sobrenome
+
+p1 = Pessoa('GF','GF3')
+p2 = Pessoa('fc', 'df')
+lista = [vars(p1), vars(p2)]
+
 
 42: IMPORTE O MODULO CRIADO NO PYTHON PARA TER O CAMINHO DO ARQUIVO E FAÇA A LEITURA DELE
 from work.pythonclub.f5_POO.from_module_json import PATH_TO_JSON, Pessoa
