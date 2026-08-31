@@ -96,5 +96,25 @@ def test_multiplas_somas(entrada):
     'entrada, valor_esperado',
     [(3,6),(7,14),(1,2),(9,18)]
 )
-def test_multiplas_somas(entrada):
-    assert soma(entrada,entrada) == entrada+entrada
+def test_multiplas_somas(entrada,valor_esperado):
+    assert soma(entrada,entrada) == valor_esperado
+ 
+1.23 faça um exemplo de um parametrize com 2 entradas e um valor esperado para soma?
+@mark.teste_parametro
+@mark.parametrize(
+    'entrada1, entrada2, valor_esperado',
+    [(3,6,9),(7,14,21),(1,2,3),(9,18,27)]
+)
+def test_multiplas_somas(entrada1,entrada2,valor_esperado):
+    assert soma(entrada1,entrada2) == valor_esperado
+
+1.24 como fazer um marcador para um teste que voce sabe que vai falhar?
+@mark.falha
+@mark.fail
+def test_soma_que_vai_falhar():
+    assert soma(2,2) == 4
+
+
+2 fixtures
+
+2.1 
