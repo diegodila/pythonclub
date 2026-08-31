@@ -1,0 +1,100 @@
+1.1 como dever ser o inicio do nome da funcao do pystest?
+começar com test
+
+1.2 para execucao dos testes como a pasta deve chamar no pytest?
+tests
+
+1.3 qual o padrao requirido de nomes de funcao?
+começar ou terminar com o nome "test"
+
+1.4 quando vamos construir uma função qual o ideal para nomeclatura?
+quanto mais verboso melhor, dizendo o que aquele test faz.
+
+1.5 com nao mostrar o traceback no pytest?
+pytest --tb=no
+
+1.6 o esqueleto de um funcionamento de um teste apresenta quantas etapas?
+3 etapas
+
+1.7 quais sao as principais metodologias de etapas de testes?
+metodologia gwt e metodologia triplo A
+
+1.8 em anotomia de um teste o que é a metodologia gwt?
+é o padrao de ivan moore, popularizado por dan north
+given - dado
+when - quando
+then - entao
+
+
+1.9 em anatomia de uma teste o que é a metodologia triplo A?
+arrange - dado
+act - Quando
+Assert - Assert
+
+1.10 qual a flag que utilizamos para o teste parar onde ele falha?
+a flag -x 
+pytest -x 
+
+1.11 quais as boas praticas de um teste com assert?
+o teste bem nucleado atomico, com apenas 1 assert
+
+1.12 como faço o estudo de erro em um teste que falhou? 
+com a flag --pdb
+pytest --pdb
+
+1.13 como eu faço para rodar testes com nomes especificos?
+com a flag -k e o nome
+pytest -k "soma"
+
+1.14 como eu faço para mostrar as saidas no terminal?
+a flag -s - show stdout - mostrar as saidass no console
+
+1.15 como eu faço para marcar um funcao com um nome?
+eu importo o marks
+from pystest import mark
+e depois decoro a funcao com mark e o nome
+@mark.soma
+
+1.16 como eu faço para rodar os testes que estao fora do marcador soma?
+pystest -m "not soma"
+
+1.17 como pulamos nossos testes no mark?
+@mark.skip - pula testes
+@mark.skipif - pula teste em determida contexto
+@mark.xfail - esperar falha em determidado contexto
+@mark.userfixture - iremos ter uma sessao exclusiva
+@mark.parametrize - avaliar diversos parametros 
+
+
+1.18 como coloco um motivo no mark de pular o teste?
+@mark.skip(reason="Ainda nao implementado")
+def test_testinho():
+    assert false
+
+pytest
+
+1.19 com mostrar o motivo do skip quando executamos o pytest?
+pytest -rs
+
+
+1.20 o que faz o mark.parametrize()?
+multiplas avaliacoes de uma determinada funcao
+
+1.21 faça um exemplo de um parametrize com entradas para soma?
+
+@mark.teste_parametro
+@mark.parametrize(
+    'entrada',
+    [3,5,6,8,9,2]
+)
+def test_multiplas_somas(entrada):
+    assert soma(entrada,entrada) == entrada+entrada
+
+1.22 faça um exemplo de um parametrize com multiplas entradas para soma?
+@mark.teste_parametro
+@mark.parametrize(
+    'entrada, valor_esperado',
+    [(3,6),(7,14),(1,2),(9,18)]
+)
+def test_multiplas_somas(entrada):
+    assert soma(entrada,entrada) == entrada+entrada
