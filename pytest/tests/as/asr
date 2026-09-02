@@ -119,3 +119,11 @@ def test_soma_que_vai_falhar():
 
 2.1 qual a maneira de verificar todas as fixtures existentes?
 pytest --fixtures
+
+2.2 qual a finalidade de uma fixture?
+ela segue a anatomia do teste, onde ele prepara o contexto do teste. é uma preparacao antes do teste se iniciar. ela trabalha desde inicializacao ate o termino TearDown/Cleanup
+
+2.3 o que sao as fixtures?
+elas promovem um contexto consistente, confiavel e definido para os testes. Ela abre um contexto e finaliza ele (setup - TearDown/cleanup)
+
+2.4 
