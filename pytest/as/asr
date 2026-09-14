@@ -53,14 +53,14 @@ a flag -s - show stdout - mostrar as saidass no console
 eu importo o marks
 from pystest import mark
 e depois decoro a funcao com mark e o nome
-@mark.soma
+@pytest.mark.soma
 
 1.16 como eu faço para rodar os testes que estao fora do marcador soma?
-pystest -m "not soma"
+pytest -m "not soma"
 
 1.17 como pulamos nossos testes no mark?
 @mark.skip - pula testes
-@mark.skipif - pula teste em determida contexto
+@mark.skipif - pula teste em determido contexto
 @mark.xfail - esperar falha em determidado contexto
 @mark.userfixture - iremos ter uma sessao exclusiva
 @mark.parametrize - avaliar diversos parametros 
