@@ -126,4 +126,27 @@ ela segue a anatomia do teste, onde ele prepara o contexto do teste. é uma prep
 2.3 o que sao as fixtures?
 elas promovem um contexto consistente, confiavel e definido para os testes. Ela abre um contexto e finaliza ele (setup - TearDown/cleanup)
 
-2.4 
+2.4 como ver as fixtures que estao no projeto?
+pytest --fixtures
+
+2.5 de onde vem o request que passamos em fixtures?
+vem do proprio pytest. o request é uma fixture especial/builtin do pytest.
+
+2.6 o que o request é dentro do parametro de uma funcao fixture?
+Ele é um objeto que o pytest injeta automaticamente quando você declara request como parâmetro de uma fixture
+
+2.7 como funciona o params que passamos no decorator da fixture?
+O pytest vai executar a fixture para cada item de params, quando temos n parametros temos n casos de teste, por exemplo abaixo, temos 2 casos de testes. O pytest faz dois casos de teste porque temos 2 itens em params.
+
+@pytest.fixture(
+    params=[
+        ['customer_id'],
+        ['customer_id', 'id_pais'],
+    ]
+)
+
+
+2.8 como fazemos para recuperar o parametro atual do objeto request?
+request.param
+
+2.9
