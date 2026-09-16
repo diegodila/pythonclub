@@ -1,0 +1,26 @@
+1.1 o que sao type hints?
+São "dicas" (hints) de tipo que você adiciona no seu código.
+
+1.2 os types hits mudam algo no interpretador python?
+Elas não mudam como o Python roda seu código, ou seja, o interpretador ignora 
+completamente.
+
+1.3 para que serve os type hints?
+elas servem pra coisas MUITO úteis, tipo:
+- Permitir que ferramentas como Mypy ou Pyright encontrem erros antes de rodar
+- Ativar autocompletar inteligente e mostrar docs nos editore
+- Ajudar você mesmo a entender melhor o seu código
+- Evitar bugs bobos (ex: passar int onde era str, etc...)
+- Melhorar a legibilidade do código, como se fosse uma documentação automática
+
+1.4 quais types checkers temos disponiveis?
+varios, Pyright, mypy, pyrem, pytype
+
+1.5 o que sao type checkers?
+geralmente são programas de linha de comando
+
+1.6 quando queremos o tipo explicito para uma variavel?
+quando temos uma variavel que nao queremos que mude de tipo ao longo do codigo
+
+1.7 como criamos uma constante no python?
+quando colocamos tudo com letras maiusculas, ex: CONSTANTE = "valor_constante"
