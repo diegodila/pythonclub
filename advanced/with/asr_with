@@ -2,13 +2,13 @@
 para abrir arquivos e banco de dados
 
 1.2 qual o problema que o with resolve?
-quando abrimos algo, e por algum motivo tem um erro de execução no meio, nao é possivel fechar esse arquivo/conexao/thread
+quando abrimos algo, e por algum motivo tem um erro de execução no meio, 
+nao é possivel fechar esse arquivo/conexao/thread
 
 1.3 Você usa ele normalmente?
-Ao sair do bloco with, o Python fecha automaticamente, mesmo se ocorrer uma exceção
-Evita vazamento de recursos
+Ao sair do bloco with, o Python fecha automaticamente, mesmo se ocorrer uma 
+exceção. Evita vazamento de recursos
 with = segurança + limpeza automática
-
 
 with algo:
     # código
