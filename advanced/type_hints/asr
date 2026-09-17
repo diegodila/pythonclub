@@ -24,3 +24,34 @@ quando temos uma variavel que nao queremos que mude de tipo ao longo do codigo
 
 1.7 como criamos uma constante no python?
 quando colocamos tudo com letras maiusculas, ex: CONSTANTE = "valor_constante"
+
+1.8 qual a convencao no python sobre constante?
+nao alteramos uma constante, por convencao nao atribuimos novamente a uma 
+constante porem eu posso fazer uma append nessa variavel
+CONSTANTE_DOIS: Final[list[str]] = ["a", "b"]
+CONSTANTE_DOIS.append("c")
+
+1.9 o que significa o pipe "|" no argumentos de tipos?
+union
+ex: lista: [str | int] = [1,'s']
+
+1.10 sobre tuplas, o que ela é?
+ela é uma lista imutavel, definimos ela eu nao tiro ou coloco algo de dentro 
+dela
+
+1.11 construa uma tupla e tipe ela que no primeiro indice é um inteiro e no 
+segundo indice é uma string?
+tupla_imutavel: tuple[int, str] = (1, "Diego")
+
+1.12 escreva um conjunto imutavel com indices de inteiros e tipe ele
+conjunto_imutavel: frozenset[int] = frozenset([2, 3, 4, 5])
+
+1.13 tipe um variavel com o tipo de qualquer coisa?
+qualquer_coisa: object = 123 
+
+1.14 tipe uma variavvel constante com tipo final (que nao deve ser mudada)?
+from typing import Final
+CONSTANTE_DOIS: Final[list[str]] = ["a", "b"]
+
+1.15 como o type checker ve que uma variavel é uma constante?
+com upper_case ou a letras maisculas

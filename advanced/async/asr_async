@@ -15,7 +15,7 @@ executamos as instrucoes de um programa por um unico core mesmo que maquina tenh
 em tarefas que fazem o uso excessivo da cpu/gpu
 
 1.6 quais as tarefas que utilizam bastante processamento de cpu?
-operacoes em string; algoritmos de busca, processamento grafico, algoritmosde processamento numerico
+operacoes em string; algoritmos de busca, processamento grafico, algoritmos de processamento numerico
 
 1.7 onde é utilizado o tipo de programacao assincrona?
 em operacoes de leitura ou escrita em dispositivos IO - (input, output)
@@ -72,7 +72,7 @@ ela nao fica somente com status "running" mas ativa o Main Thread block, que faz
 start()= new -> join()= ready -> running> blocked > terminated
 
 1.23 o que é uma agendador(scheduler)?
-sistemas operacionais possuem um modulo que seleciona as proximas tarefas a serem admitidas no sistema e desta forma o proximo processo a ser executado, ou seja quando um processo é executado, o sistema operacional utiliza um algoritimo de escalonamento de processos que organiza e gerencia os novos processos.Este algoritmo possui um agendador, chamado scheduler que controlas quando um processo ou thread ira executar e por quanto tempo 
+sistemas operacionais possuem um modulo que seleciona as proximas tarefas a serem admitidas no sistema e desta forma o proximo processo a ser executado, ou seja quando um processo é executado, o sistema operacional utiliza um algoritimo de escalonamento de processos que organiza e gerencia os novos processos. Este algoritmo possui um agendador, chamado scheduler que controla quando um processo ou thread ira executar e por quanto tempo 
 
 1.24 quando trabalhamos com multi threads o que é recomendado?
 que tentemos manter o minimo possivel de recursos compartilhados entre threads. que thread dependa de dados ou recursos que outra thread possa manipular

@@ -1,0 +1,44 @@
+[tool.ruff]
+# Define o limite de linha estrito do Google (80) ou PEP8 (79)
+line-length = 80
+indent-width = 4
+extend-include = ["*.ipynb"]
+
+ignore = [
+    "D203", # Avisa para evitar conflito com D211 (padrão do Google)
+    "D213", # Avisa para evitar conflito com D212 (padrão do Google)
+]
+
+# Ativa as regras básicas (E/F) e o padrão do Google para Docstrings (D203/D213)
+# Também inclui 'I' para organizar os imports automaticamente
+[tool.ruff.lint]
+select = ["E", "F", "I", "D"]
+ignore = ["D203", "D213"]
+
+[tool.ruff.lint.pydocstyle]
+# Força o Ruff a validar se as docstrings seguem o padrão Google
+convention = "google"
+
+[tool.ruff.format]
+# Mantém o padrão de aspas duplas, preferido pelo Google e pelo Black
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["ANN201", "S101"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.13"
+include = ["src", 'tests']
+exclude = [
+    "**/venv",
+    "**/.venv",
+    "**/env",
+    "**/.env",
+    "**/node_modules",
+    "**/__pycache__",
+]
+venv = ".venv"
+venvPath = "."
+executionEnvironments = [{ root = "src" }]
