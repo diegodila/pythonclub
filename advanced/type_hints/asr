@@ -55,3 +55,12 @@ CONSTANTE_DOIS: Final[list[str]] = ["a", "b"]
 
 1.15 como o type checker ve que uma variavel é uma constante?
 com upper_case ou a letras maisculas
+
+callable
+
+2.1 porque eu nao consigo deixar uma tipagem implicita em uma funcao?
+porque a maioria das funcoes quando eu vou passar um valor de argumento/parametro eu nao tenho valor.
+
+2.2 o que é um generico?
+é um tipo que recebe um parametro
+
