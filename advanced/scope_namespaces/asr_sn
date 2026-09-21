@@ -1,0 +1,68 @@
+1.1 o que é escopo?
+quando estou falando de um regiao do meu codigo onde meu nome esta diretamente 
+acessivel. Onde esse nome vai ter ser sido criado dentro desse escopo.  
+Ele determina os limites e o tempo de vida dos nomes definidos internamente.
+
+1.2 o que é um nome? 
+uma variavel, uma classe, uma funcao
+
+1.3 para que serve um escopo?
+Escopo é usado para encapsular o código e evitar colisões de nomes e efeitos 
+colaterais indesejados.
+
+1.4 quantos escopos o python tem?
+O Python tem quatro tipos de escopos: Built-In, Global, Enclosing e Local. 
+Esses escopos são dinâmicos. O interpretador pode criar e apagar em tempo de
+execução.
+
+1.5 como é chamado o nome de espaços do escopos? 
+Cada escopo tem seu "espaço de nomes" (namespace), que é um local onde os nomes
+e seus respectivos objetos são armazenados.
+
+1.6 o que é colisao de nomes?
+quando eu crio um nome igual ao outro, ou quando meu codigo bate com dois nomes
+
+1.7 o que é o escopo built-in?
+ele vem da propria linguagem, o built-in o python injeta dentro do meu modulo as
+funcoes que a gente utiliza dele mesmo ex: print(), locals(), globals()
+
+1.8 o que é o escopo global?
+no python é escopo do modulo ou seja todo modulo python tem seu escopo global
+
+1.9 o que é o escopo enclosing?
+quando eu tenho uma funcao externa e uma funcao interna, temos o meio do caminho
+ou usamos nome non-local. 
+
+1.10 o que é o escopo local?
+um escopo dentro de uma funcao, onde esse escopo nao é acessivel fora dessa 
+funcao
+
+1.11 exemplos do que é injetado automaticamente pelo python no escopo global?
+print("Nome do módulo:", __name__)
+print("Arquivo do módulo:", __file__)
+print("Documentação do módulo:", __doc__)
+
+1.12 o que é legb?
+local, enclosing, global and built-in
+
+1.13 qual é a ordem de localizacao do legb?
+a ordem das siglas
+
+1.14 o que é namespace?
+Namespace é uma estrutura de dados real que mapeia nomes para objetos. Cada
+chave é o nome que você define e o valor é o objeto correspondente no seu
+código. Sempre que você cria um nome, essa associação é guardada dentro de um
+namespace.
+ex: minha_variavel = 'meu_valor'
+
+1.15 o que é o globals()?
+Retorna um dicionário que representa o namespace global do módulo atual. Isso
+inclui todos os nomes definidos na raiz do arquivo.
+
+1.16 o que é o locals()?
+Retorna um dicionário com os nomes definidos no escopo local onde a função está
+sendo executada. Importante: ela só inclui nomes que já foram definidos antes da
+sua chamada.
+
+1.17 cada variavel que criamos ela tem um id, onde ela fica?
+sim, fica atrelada a memoria 
