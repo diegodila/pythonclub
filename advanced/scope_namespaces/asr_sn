@@ -65,4 +65,18 @@ sendo executada. Importante: ela só inclui nomes que já foram definidos antes 
 sua chamada.
 
 1.17 cada variavel que criamos ela tem um id, onde ela fica?
-sim, fica atrelada a memoria 
+sim, fica atrelada a memoria
+
+1.18 o que faz o vars()?
+retorna o atributo `__dict__` de um objeto, que é onde seus atributos são armazenados. se chamada sem argumentos, `vars()` se comporta exatamente como
+`locals()`, retornando o namespace local.
+
+1.19 o que faz o dir()?
+sem argumentos, `dir()` lista todos os nomes disponíveis no escopo atual. com um
+objeto como argumento, tenta listar todos os nomes acessíveis nele (como métodos
+e atributos). note que `dir()` retorna apenas os nomes, não os objetos ou seus
+valores.
+
+1.20 quando importamos um modulo ele pertence a qual namespace?
+ao namespace do modulo
+
