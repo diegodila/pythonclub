@@ -12,7 +12,7 @@ agregado sem expor sua representacao subjacente. ele nao sabe nada do interavel
 so sabe te entregar o proximo valor
 
 1.4 quando eu quero ter um interavel no python como eu faço?
-eu crio um metodo __iter__() ou inter() no meu objeto
+eu crio um metodo __iter__() ou iter() no meu objeto
 ex: interable = ["Eu", "Tenho", "__inter__"]
 interator = iter(interable)
 
