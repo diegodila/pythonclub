@@ -38,7 +38,7 @@ segundo indice é uma string?
 1.13 tipe um variavel com o tipo de qualquer coisa?
 
 
-1.14 tipe uma variavvel constante com tipo final (que nao deve ser mudada)?
+1.14 tipe uma variavel constante com tipo final (que nao deve ser mudada)?
 
 
 1.15 como o type checker ve que uma variavel é uma constante?
