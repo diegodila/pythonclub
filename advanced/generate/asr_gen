@@ -1,0 +1,81 @@
+1.1 qual a diferenca de interable para um interator?
+o interable tem a responsabilidade de deter os valores sequencialmente
+a responsabilidade do interator é te entregar um valor por vez. ele nao sabe o
+anterior e nem proximo e nem o tamanho do seu interavel 
+
+1.2 o que é um interable?
+é um item sequencial que voce pode acessar as coisas sequencialmente
+
+1.3 qual a funcao de interator?
+ele fornece uma maneira de acessar sequencialmente, os elementos de um objeto
+agregado sem expor sua representacao subjacente. ele nao sabe nada do interavel
+so sabe te entregar o proximo valor
+
+1.4 quando eu quero ter um interavel no python como eu faço?
+eu crio um metodo __iter__() ou inter() no meu objeto
+ex: interable = ["Eu", "Tenho", "__inter__"]
+interator = iter(interable)
+
+1.5 quando o metodo next acaba com valores de um interavel o que acontece?
+ele levanta uma exceção de StopIteration e core sabe quando parar
+
+1.6 como funciona o for por baixo do panos?
+ele chama o iter do iterable e ele tem o iterator de volta e chama o next ate 
+que o StopIteration seja levantado e for trata essa excecao e para o loop
+
+1.7 o que sao generators?
+sao funcoes que sabem pausar em determinada ocasiao, todo generator é tambem um
+iterator, mas um iterator nao é um generator. generator é uma funcao que pausa
+em algum lugar, ele pausa em determinado local e executa denovo quando pedir
+
+1.8 quando eu tenho uma lista o que acontece na memoria?
+ela esta salva inteira na memoria, quando temos muitos dados podemos usar um 
+generator
+
+1.9 como transformamos uma list cohpreenshion em generator expression ou objeto
+generator?
+#generator = [n for n in range(10)]
+generator = (n for n in range(10))
+
+
+1.10 qual o principal foco entre uma lista e um objeto generator?
+um generator sempre esta pausado no primeiro item e uma lista salva todos os 
+elementos na memoria o generator nao, voce pode 
+conferir com o ex abaixo
+lista = [n for n in range(10)]
+pprint(lista)
+generator = (n for n in range(10))
+pprint(generator)
+pprint(sys.getsizeof(lista))
+print(sys.getsizeof(generator))
+
+1.11 qual a vantagem da lista sobre o generator?
+eu posso acessar indice por indice, o que nao ocorre com o generator, ele nao
+tem tamanho, nao tem indice, por exemplo eu nao consigo acessar o indice 0 do 
+meu generator, nem len do meu generator
+
+1.12 construa um generator function com retorno 1 em python?
+def generator(n:int=0):
+    yield 1
+
+1.13 com funciona o yield?
+ele pausa a execucao da funcao no momento de chamada dele
+
+1.14 com funciona o return depois de um yield em uma generator functions?
+dentro de uma generator function ele trabalha como raise stop iteration. Ele
+levanta uma excecao de StopIteration com a palavra ou objeto que voce colocou
+
+1.15 construa uma generator function com parametro 0 e 10 e que se comporte como
+um for?
+def generator(n=0, maximum=10):
+    while True:
+        yield n
+        n += 1
+
+        if n >= maximum:
+            return
+
+
+gen = generator(maximum=10)
+for n in gen:
+    print(n)
