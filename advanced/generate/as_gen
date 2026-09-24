@@ -39,7 +39,8 @@ generator = (n for n in range(10))
 
 
 1.10 qual o principal foco entre uma lista e um objeto generator?
-um generator sempre esta pausado no primeiro item e uma lista salva todos os elementos na memoria o generator nao, voce pode 
+um generator sempre esta pausado no primeiro item e uma lista salva todos os 
+elementos na memoria o generator nao, voce pode 
 conferir com o ex abaixo
 lista = [n for n in range(10)]
 pprint(lista)
