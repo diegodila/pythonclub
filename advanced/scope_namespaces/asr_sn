@@ -80,4 +80,9 @@ valores.
 1.20 quando importamos um modulo ele pertence a qual namespace?
 ao namespace do modulo
 
-1.21 
+1.21 a ordem legb volta para traz? quando estou no global eu consigo ver o 
+enclosing?
+nao
+local - enclosing - global - builtin 
+
+1.22 

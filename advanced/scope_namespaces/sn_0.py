@@ -1,9 +1,12 @@
+"""Utilização de namespaces."""
+
 # nome definido no escopo global (módulo)
 um_nome: str = "um_nome (GLOBAL)"
 
 
 # nome definido no escopo global (módulo)
 def func_global(sou_local: str) -> None:
+    """Função global para uso."""
     # Escopo local (função e seus parâmetros)
 
     # `um_nome` no escopo local é OUTRA VARIÁVEL (sem relação outro escopo)

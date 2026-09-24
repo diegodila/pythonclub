@@ -1,28 +1,17 @@
-namespace_global = globals()
-um_nome = "um_nome (GLOBAL)"
+"""Chamada da funcao sn_func_x e utilizacao da funcao."""
 
-print(id(um_nome), id(namespace_global["um_nome"]))
-print(f"Namespace global: {namespace_global}")  # retorna um dict
-# print(dir(__builtins__))
+from pprint import pprint
+
+import sn_func_x
+
+
+def func_global() -> None:
+    """Func_global definida nesse modulo para ver o comportamento."""
+    pprint(f"Estou em: {__name__} - {__file__.split('/')[-1]}")
+
+
+sn_func_x.func_global()
+pprint("-----")
+func_global()
 print()
-print(__builtins__.locals())
-print()
-
-
-def func_global(sou_local: str) -> None:
-    um_nome: str = "um_nome (LOCAL)"
-    outro_nome: str = "outro_nome (LOCAL)"
-    print("LOCALS (namespace da função)")
-    print("dir: ", dir())
-    print("vars: ", vars())
-    print(locals())
-    print()
-
-
-func_global("arg (local)")
-print()
-
-# print("GLOBALS (namespace do módulo)")
-print(
-    globals()
-)  # a funcao func_global entra apenas depois, porque foi definida depois
+pprint(globals())
