@@ -68,7 +68,8 @@ sua chamada.
 sim, fica atrelada a memoria
 
 1.18 o que faz o vars()?
-retorna o atributo `__dict__` de um objeto, que é onde seus atributos são armazenados. se chamada sem argumentos, `vars()` se comporta exatamente como
+retorna o atributo `__dict__` de um objeto, que é onde seus atributos são 
+armazenados. se chamada sem argumentos, `vars()` se comporta exatamente como 
 `locals()`, retornando o namespace local.
 
 1.19 o que faz o dir()?
@@ -85,4 +86,26 @@ enclosing?
 nao
 local - enclosing - global - builtin 
 
-1.22 
+1.22 qual a boa pratica que temos para utilizacao ou alteracao de variaveis no
+escopo?
+alterar uma variavel fora do seu escopo é uma ma pratica de programacao, em 
+teoria funcoes e classes devem trabalhar apenas com dados que elas tem 
+internamente, para isso temos parametros e retorno
+
+1.23 geralmente uma funcao que nao retorna nada é chamada como?
+procedure
+
+1.24 o que sao freevars?
+são as variáveis da função externa que estão sendo usadas dentro da função 
+interna. A gente detecta isso pela função interna, porque ela é quem depende
+desses nomes. Eles entram em co_freevars.
+
+1.25 o que sao cellvars?
+são as variáveis declaradas na função atual (externa) que precisam ser 
+capturadas porque são usadas por funções internas. A gente detecta isso pela 
+função externa, porque ela é quem fornece essas variáveis pro closure. Eles
+aparecem em co_cellvars.
+
+1.25 o que sao varnames?
+são as variáveis locais de verdade, exclusivas da função. Elas estão em
+co_varnames e não fazem parte de nenhum closure, só existem ali dentro mesmo.
