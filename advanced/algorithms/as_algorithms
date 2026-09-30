@@ -14,7 +14,7 @@ pessoas = [
     {"nome": "Bruno", "idade": 25},
     {"nome": "Carlos", "idade": 31},
     {"nome": "Daniela", "idade": 16},
-    {"nome": "Eduardo", "idade": 42},
+    {"nome": "Eduardo", "idadze": 42},
 ]
 
 
