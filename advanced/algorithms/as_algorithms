@@ -1,8 +1,9 @@
 List comprehension
 
 1.1 Crie uma nova lista contendo as temperaturas convertidas para Fahrenheit. 
-sample = [32.0, 50.0, 68.0, 77.0, 86.0, 95.0]?
-resultado = [temperatura * 9 / 5 + 32 for temperatura in temperaturas]
+temperatura = [32.0, 50.0, 68.0, 77.0, 86.0, 95.0]?
+
+
 1.2 Crie uma lista contendo o dobro apenas das leituras maiores ou iguais a 15.
 leituras = [12, 7, 25, 3, 18, 30, 9, 21]
 
@@ -14,7 +15,7 @@ pessoas = [
     {"nome": "Bruno", "idade": 25},
     {"nome": "Carlos", "idade": 31},
     {"nome": "Daniela", "idade": 16},
-    {"nome": "Eduardo", "idadze": 42},
+    {"nome": "Eduardo", "idade": 42},
 ]
 
 
