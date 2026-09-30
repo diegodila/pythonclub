@@ -1,0 +1,46 @@
+List comprehension
+
+1.1 Crie uma nova lista contendo as temperaturas convertidas para Fahrenheit. 
+sample = [32.0, 50.0, 68.0, 77.0, 86.0, 95.0]?
+resultado = [temperatura * 9 / 5 + 32 for temperatura in temperaturas]
+1.2 Crie uma lista contendo o dobro apenas das leituras maiores ou iguais a 15.
+leituras = [12, 7, 25, 3, 18, 30, 9, 21]
+resultado = [
+    temperatura * 9 / 5 + 32
+    for temperatura in temperaturas
+]
+
+1.3 Crie uma lista contendo somente os nomes das pessoas maiores de idade, mas
+os nomes devem ser convertidos para letras maiúsculas.  
+pessoas = [
+    {"nome": "Ana", "idade": 17},
+    {"nome": "Bruno", "idade": 25},
+    {"nome": "Carlos", "idade": 31},
+    {"nome": "Daniela", "idade": 16},
+    {"nome": "Eduardo", "idade": 42},
+]
+resultado = [x['nome'].upper() for x in pessoas if x['idade'] > 18]
+
+1.4 Crie uma lista contendo todas as combinações possíveis entre nome e idade.
+nomes = ["Ana", "Bruno", "Carlos"]
+idades = [20, 30, 40]
+resultado = [
+    (nome, idade)
+    for nome in nomes
+    for idade in idades
+]
+
+1.5 Crie uma única list comprehension que produza uma lista contendo o quadrado 
+dos números pares da matriz.
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [10, 11, 12],
+]
+resultado = [
+    numero ** 2
+    for linha in matriz
+    for numero in linha
+    if numero % 2 == 0
+]
