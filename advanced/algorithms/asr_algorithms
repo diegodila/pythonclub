@@ -45,3 +45,72 @@ resultado = [
     for numero in linha
     if numero % 2 == 0
 ]
+
+1.6 Crie um generator que produza somente os números pares elevados ao quadrado.
+O resultado, quando consumido, deve ser: [4, 16, 36, 64, 100] a ideia é produzir 
+um valor sob demanda
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+gerador = (
+    numero ** 2
+    for numero in numeros
+    if numero % 2 == 0
+)
+
+print(list(gerador))
+
+1.7 Agora considere uma lista de usuários, Crie uma função geradora chamada: 
+usuarios_ativos() que produza somente os usuários ativos.
+usuarios = [
+    {"nome": "Ana", "ativo": True},
+    {"nome": "Bruno", "ativo": False},
+    {"nome": "Carlos", "ativo": True},
+    {"nome": "Daniela", "ativo": False},
+    {"nome": "Eduardo", "ativo": True},
+]
+
+def usuarios_ativos(usuarios):
+    for usuario in usuarios:
+        if usuario["ativo"]:
+            yield usuario
+
+for usuario in usuarios_ativos(usuarios):
+    print(usuario)
+
+
+1.8 Agora vamos para algo mais próximo de Data Engineering, você recebe uma sequência de números: numeros = range(1, 1_000_001). Você precisa construir um pipeline que:
+
+1- receba os números;
+2- selecione somente os pares;
+3- multiplique cada número por 10;
+4- produza somente os 10 primeiros resultados.
+def numeros_pares(numeros):
+    for numero in numeros:
+        if numero % 2 == 0:
+            yield numero
+
+
+def multiplicar_por_dez(numeros):
+    for numero in numeros:
+        yield numero * 10
+
+
+def primeiros(numeros, quantidade):
+    contador = 0
+
+    for numero in numeros:
+        if contador >= quantidade:
+            break
+
+        yield numero
+        contador += 1
+
+
+numeros = range(1, 1_000_001)
+
+pares = numeros_pares(numeros)
+multiplicados = multiplicar_por_dez(pares)
+resultado = primeiros(multiplicados, 10)
+
+print(list(resultado))

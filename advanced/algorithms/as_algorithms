@@ -31,3 +31,26 @@ matriz = [
     [7, 8, 9],
     [10, 11, 12],
 ]
+
+
+1.6 Crie um generator que produza somente os números pares elevados ao quadrado. O resultado, quando consumido, deve ser: [4, 16, 36, 64, 100]
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+1.7 Agora considere uma lista de usuários, Crie uma função geradora chamada: 
+usuarios_ativos() que produza somente os usuários ativos.
+usuarios = [
+    {"nome": "Ana", "ativo": True},
+    {"nome": "Bruno", "ativo": False},
+    {"nome": "Carlos", "ativo": True},
+    {"nome": "Daniela", "ativo": False},
+    {"nome": "Eduardo", "ativo": True},
+]
+
+
+1.8 Agora vamos para algo mais próximo de Data Engineering, você recebe uma sequência de números: numeros = range(1, 1_000_001). Você precisa construir um pipeline que:
+1- receba os números;
+2- selecione somente os pares;
+3- multiplique cada número por 10;
+4- produza somente os 10 primeiros resultados.
